@@ -1,0 +1,151 @@
+/* One world coordinate system: scale the whole scene, not isolated props. */
+html:is(.phone-landscape,.phone-portrait) .viewport {
+  inset:0 auto auto 0; width:var(--scene-width); height:620px;
+  transform:scale(var(--scene-scale));transform-origin:0 0;
+}
+html:is(.phone-landscape,.phone-portrait) .viewport .runner{width:240px;height:184px;bottom:19%;left:12%}
+html:is(.phone-landscape,.phone-portrait) .viewport .opening{left:45px;top:15%;width:500px}
+html:is(.phone-landscape,.phone-portrait) .viewport .opening small,
+html:is(.phone-landscape,.phone-portrait) .viewport .start-journey{display:none}
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage=start],[data-stage=childhood]){
+  background:#e9e0cb!important;
+}
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage=start],[data-stage=childhood]) #dialogContent{
+  display:grid;place-items:center;padding:12px max(16px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));
+}
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage=start],[data-stage=childhood]) .art-screen{
+  width:min(calc(var(--phone-width) - 64px),calc((var(--phone-height) - 38px)*1.77778))!important;
+  height:auto!important;aspect-ratio:16/9!important;box-shadow:none!important;margin:0!important;
+}
+html:is(.phone-landscape,.phone-portrait) .childhood-screen .screen-actions p{display:none}
+html:is(.phone-landscape,.phone-portrait) .childhood-screen .ink-button{font-size:16px;min-height:34px;padding:4px 16px}
+html:is(.phone-landscape,.phone-portrait) .travel-controls,
+html:is(.phone-landscape,.phone-portrait) .player-actions{bottom:max(18px,env(safe-area-inset-bottom))}
+html:is(.phone-landscape,.phone-portrait) .journey-track{bottom:max(31px,env(safe-area-inset-bottom))}
+
+/* Every illustrated game uses the measured browser viewport. Safari's visible
+   toolbar can leave far less height than the physical screen reports. */
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog{
+  width:var(--phone-width)!important;height:var(--phone-height)!important;
+  max-width:none!important;max-height:none!important;margin:0!important;
+  padding:0!important;border:0!important;border-radius:0!important;
+  box-shadow:none!important;overflow:hidden!important;background:#eadabd;
+}
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog::backdrop{background:#eadabd;backdrop-filter:none}
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog #dialogContent{
+  width:100%;height:100%;overflow:hidden;display:grid;place-items:center;
+}
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog>.dialog-close{
+  position:fixed;z-index:100;right:max(8px,env(safe-area-inset-right));
+  top:max(8px,env(safe-area-inset-top));width:44px;height:44px;margin:0;
+}
+html:is(.phone-landscape,.phone-portrait) .reference-game,
+html:is(.phone-landscape,.phone-portrait) .finale-game{
+  width:min(100%,calc(var(--phone-height)*1.77778));
+  height:min(100%,calc(var(--phone-width)/1.77778));
+  min-height:0;margin:auto;aspect-ratio:16/9;overflow:hidden;
+}
+html:is(.phone-landscape,.phone-portrait) .record-player{inset:0;gap:2%;padding:8px 54px 7px}
+html:is(.phone-landscape,.phone-portrait) .record-disc{
+  --disc-size:min(42dvh,42vw,210px);flex:0 0 var(--disc-size);width:var(--disc-size);height:var(--disc-size);min-width:0;min-height:0;max-width:none;aspect-ratio:1 / 1;box-sizing:border-box;border-width:5px;padding:4%;
+}
+html:is(.phone-landscape,.phone-portrait) .record-disc img{display:block;width:100%;height:100%;aspect-ratio:1 / 1;object-fit:cover}
+html:is(.phone-landscape,.phone-portrait) .record-now-playing{font-size:13px;line-height:1.1}
+html:is(.phone-landscape,.phone-portrait) .record-options{
+  width:min(78%,420px);max-width:none;justify-content:center;overflow-x:auto;padding:2px 4px;
+}
+html:is(.phone-landscape,.phone-portrait) .record-options button{flex:0 0 38px;height:38px}
+
+html:is(.phone-landscape,.phone-portrait) .photo-workroom{
+  width:100%;height:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,28%);
+  grid-template-rows:1fr auto;background:#f8d7d9;overflow:hidden;
+}
+html:is(.phone-landscape,.phone-portrait) .photo-artboard{
+  grid-column:1;grid-row:1/3;align-self:center;width:100%;max-height:100%;aspect-ratio:16/9;
+}
+html:is(.phone-landscape,.phone-portrait) .booth-controls{
+  grid-column:2;grid-row:1;align-content:center;display:grid;gap:5px;padding:42px 8px 4px;overflow:auto;
+}
+html:is(.phone-landscape,.phone-portrait) .booth-controls .ink-button{
+  min-height:35px;padding:4px 7px;font-size:13px;line-height:1.15;
+}
+html:is(.phone-landscape,.phone-portrait) .booth-status{
+  grid-column:2;grid-row:2;margin:0;padding:4px 10px 8px;font-size:11px;line-height:1.25;
+}
+html:is(.phone-landscape,.phone-portrait) .sticker-nudges{display:none}
+
+/* Keep the photo booth artwork horizontal and complete on short phone
+   viewports. Controls float over the unused edge instead of narrowing it. */
+html:is(.phone-landscape,.phone-portrait) .illustrated-dialog[data-stage="photo"] #dialogContent{
+  display:grid;place-items:center;padding:0 max(50px,env(safe-area-inset-right)) 0 max(8px,env(safe-area-inset-left));
+}
+html:is(.phone-landscape,.phone-portrait) .photo-workroom{
+  position:relative;display:grid;place-items:center;width:100%;height:100%;overflow:hidden;
+}
+html:is(.phone-landscape,.phone-portrait) .photo-artboard{
+  grid-area:1/1;width:min(100%,calc(var(--phone-height)*1.77778));height:min(100%,calc(var(--phone-width)/1.77778));
+  max-width:100%;max-height:100%;margin:auto;aspect-ratio:16/9;
+}
+html:is(.phone-landscape,.phone-portrait) .photo-workroom .booth-controls{
+  position:absolute;z-index:30;right:max(4px,env(safe-area-inset-right));bottom:max(5px,env(safe-area-inset-bottom));
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:min(270px,42%);padding:5px;gap:4px;
+  border-radius:7px;background:rgb(255 239 224 / 88%);box-shadow:2px 5px 12px rgb(79 43 57 / 18%);overflow:visible;
+}
+html:is(.phone-landscape,.phone-portrait) .photo-workroom .booth-controls .ink-button{
+  min-width:0;min-height:36px;padding:4px 6px;font-size:12px;line-height:1.15;
+}
+html:is(.phone-landscape,.phone-portrait) .photo-workroom .booth-status{display:none}
+
+html.photo-portrait-mode.phone-portrait .illustrated-dialog[data-stage="photo"] #dialogContent{display:block;width:100%;height:100%;padding:0;overflow-y:auto;background:#f8d7d9}
+html.photo-portrait-mode.phone-portrait .photo-workroom{display:flex;flex-direction:column;width:100%;min-height:100%;height:auto;overflow:visible;padding:52px 10px 18px;box-sizing:border-box}
+html.photo-portrait-mode.phone-portrait .photo-artboard{flex:0 0 auto;width:100%;height:auto;max-width:none;max-height:none;aspect-ratio:16 / 9;margin:0}
+html.photo-portrait-mode.phone-portrait .photo-workroom .booth-controls{position:static;display:grid;grid-template-columns:1fr 1fr;width:100%;margin-top:14px;padding:8px;box-sizing:border-box}
+html.photo-portrait-mode.phone-portrait .photo-workroom .booth-controls .ink-button{min-height:44px;font-size:14px}
+
+/* The photo booth is the one mobile screen allowed to stay portrait. Some
+   browsers report a rotated phone as phone-landscape, so key this layout off
+   the stage itself and keep the dialog above the rotated game surface. */
+@media (max-width:700px){
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"]{
+    position:fixed!important;inset:0!important;z-index:1001!important;
+    width:100vw!important;height:100dvh!important;max-width:none!important;
+    max-height:none!important;margin:0!important;translate:none!important;
+    rotate:0deg!important;border:0!important;border-radius:0!important;
+    pointer-events:auto!important;overflow:hidden!important;
+  }
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"]::backdrop{background:#f8d7d9}
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"] #dialogContent{
+    display:block!important;width:100%!important;height:100%!important;
+    padding:0!important;overflow-y:auto!important;overflow-x:hidden!important;
+    pointer-events:auto!important;background:#f8d7d9;
+  }
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"] .photo-workroom{
+    display:flex!important;flex-direction:column!important;align-items:stretch!important;
+    width:100%!important;min-height:100%!important;height:auto!important;
+    padding:52px 10px 18px!important;box-sizing:border-box;overflow:visible!important;
+    pointer-events:auto!important;
+  }
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"] .photo-artboard{
+    flex:0 0 auto!important;width:100%!important;height:auto!important;
+    max-width:none!important;max-height:none!important;aspect-ratio:16/9!important;
+    margin:0!important;pointer-events:auto!important;
+  }
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"] .booth-controls{
+    position:static!important;display:grid!important;grid-template-columns:1fr 1fr!important;
+    width:100%!important;margin-top:14px!important;padding:8px!important;
+    box-sizing:border-box;pointer-events:auto!important;z-index:20;
+  }
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"] .booth-controls>*{
+    pointer-events:auto!important;
+  }
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"] .booth-controls .ink-button{
+    min-height:46px!important;font-size:14px!important;
+  }
+  html.photo-portrait-mode .illustrated-dialog[data-stage="photo"] .booth-status{display:block!important}
+}
+
+/* The memory iframe must use the same measured visual viewport as the game.
+   This prevents WeChat/Safari chrome from clipping or double-scaling it. */
+html:is(.phone-landscape,.phone-portrait) .memory-scene-frame{
+  position:fixed;inset:0;width:var(--phone-width);height:var(--phone-height);max-width:none;max-height:none;
+}

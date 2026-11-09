@@ -1,0 +1,62 @@
+/* Separate source-art layers: scenery, girl, dogs, cake, controls. */
+.depth-opening{--look-x:0;--look-y:0;perspective:1000px;aspect-ratio:16/9;height:auto;overflow:hidden;background:#eaa4af}
+.opening-theatre{position:absolute;inset:0;perspective:1200px;transform-style:preserve-3d;transform:rotateY(calc(var(--look-x)*3deg)) rotateX(calc(var(--look-y)*-2deg));transition:transform .18s ease-out}
+.opening-backdrop,.opening-layer{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+.opening-celebration,.opening-celebration img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+.opening-celebration{z-index:7;display:none;transform:none;translate:none;filter:none}
+.opening-backdrop{transform:translateZ(-22px) scale(1.03)}
+.opening-layer{opacity:0;transition:opacity .18s ease-out,translate .22s ease-out;filter:drop-shadow(3px 9px 5px #66334448);transform-origin:50% 75%}
+.opening-theatre.is-ready .opening-layer{opacity:1}
+.layer-girl{transform:translateZ(14px);translate:calc(var(--look-x)*8px) calc(var(--look-y)*5px)}
+.layer-dog-a{transform:translateZ(29px);translate:calc(var(--look-x)*17px) calc(var(--look-y)*8px)}
+.layer-dog-b{transform:translateZ(37px);translate:calc(var(--look-x)*22px) calc(var(--look-y)*10px)}
+.layer-cake{transform:translateZ(48px);translate:calc(var(--look-x)*29px) calc(var(--look-y)*12px);filter:drop-shadow(2px 12px 6px #79434655)}
+.depth-opening.birthday-reveal .opening-backdrop,.depth-opening.birthday-reveal .opening-layer{display:none}
+.depth-opening.birthday-reveal .opening-celebration{display:block}
+.depth-opening .screen-actions{z-index:10;bottom:1%;gap:0}.depth-opening .ink-button{font-size:clamp(17px,2vw,26px);min-height:44px;padding:7px 24px;box-shadow:0 5px 0 #a15c67,0 11px 12px #61304433}.depth-opening .screen-actions p{font-size:15px}
+.lettering-room .birthday-frame{left:39%;top:33%;width:22%;height:38%;padding:10px;border:0;background:none;box-shadow:none;transform:rotate(-4deg);display:grid;place-items:center;z-index:5;perspective:750px}
+.lettering-room .birthday-frame .frame-lettering{position:static;width:100%;height:auto;max-height:90%;object-fit:contain;transform:none;filter:drop-shadow(3px 5px 1px #91463644);transition:transform .28s,filter .28s;pointer-events:none}
+.birthday-frame:hover .frame-lettering,.birthday-frame:focus-visible .frame-lettering{transform:translateY(-9px) rotate(2deg) scale(1.13)!important;filter:drop-shadow(6px 14px 4px #6b3a4b55)!important}
+.lettering-room.entering-memory .frame-lettering{animation:lettering-enter .78s cubic-bezier(.2,.7,.2,1) both}
+@keyframes lettering-enter{0%{transform:translateY(0) scale(1)}45%{transform:translateY(-16px) scale(1.35)}100%{transform:translateY(-20px) scale(2.15);opacity:0}}
+.lettering-room.entering-memory>.screen-art{transition:filter .65s;filter:brightness(1.12)}
+.floating-quote{font-size:22px;max-width:260px;line-height:1.5}.place-title strong{font-size:38px}.place-title span{font-size:16px}.sharp-quotes p{font-size:22px;max-width:280px}.zone-hengdian .place-title{top:5%;left:380px}.liftable-text.text-lifted{transform:translate3d(0,-14px,35px) rotate(-2deg) scale(1.08)!important}.quote-one{top:18%}.quote-two{top:17%}.bedtime-quote{font-size:17px}
+@media(max-width:650px){.depth-opening{height:auto;min-height:0;aspect-ratio:16/9;margin-bottom:84px;overflow:visible}.depth-opening .screen-actions{top:100%;bottom:auto;padding:10px 0}.depth-opening .opening-theatre{overflow:hidden}.lettering-room{margin-bottom:100px!important}.lettering-room .birthday-frame{left:39%;top:33%;width:22%;height:38%;border:0;padding:2px}.lettering-room .screen-actions{top:104%;bottom:auto}.lettering-room .screen-actions p{font-size:17px}.floating-quote,.sharp-quotes p{font-size:18px;max-width:215px}.place-title strong{font-size:30px}.bedtime-quote{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.opening-theatre,.opening-layer{transform:none;translate:none;transition:none}.lettering-room.entering-memory .frame-lettering{animation:none}.birthday-frame:hover .frame-lettering{transform:scale(1.04)!important}}
+
+.layered-childhood{--look-x:0;--look-y:0;background:#cceee9;overflow:hidden;perspective:1000px}
+.childhood-theatre{position:absolute;inset:0;overflow:hidden;transform-style:preserve-3d}
+.childhood-theatre img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+.childhood-base{filter:saturate(.97) brightness(.99)}
+.childhood-subject,.childhood-gifts{transition:translate .2s ease-out,filter .2s ease-out;will-change:translate;filter:drop-shadow(7px 14px 7px #59483555)}
+.childhood-dog-left{clip-path:inset(24% 68% 7% 6%);translate:calc(var(--look-x)*-16px) calc(var(--look-y)*-8px);scale:1.012}
+.childhood-girl{clip-path:inset(4% 35% 1% 37%);translate:calc(var(--look-x)*13px) calc(var(--look-y)*7px);scale:1.008;filter:drop-shadow(6px 17px 8px #59483566)}
+.childhood-dog-right{clip-path:inset(24% 5% 7% 68%);translate:calc(var(--look-x)*22px) calc(var(--look-y)*10px);scale:1.016;filter:drop-shadow(9px 18px 8px #59483566)}
+.childhood-theatre .childhood-gifts{object-fit:contain;inset:35.6% auto auto;width:27.85%;height:49.5%;scale:1.018;filter:drop-shadow(10px 20px 9px #59483566)}
+.childhood-theatre .childhood-gifts-left{left:15.87%;clip-path:inset(39% 0 0 0);translate:calc(var(--look-x)*-16px) calc(var(--look-y)*-8px)}
+.childhood-theatre .childhood-gifts-right{left:52.73%;clip-path:inset(41% 0 0 22%);translate:calc(var(--look-x)*22px) calc(var(--look-y)*10px)}
+.childhood-hotspot{left:35%;top:7%;width:34%;height:86%;border:0!important;background:transparent!important;box-shadow:none!important}
+.layered-childhood .screen-actions{z-index:20}
+.archive-sticker.voice-glow{z-index:45!important;animation:voice-character-glow .8s ease-in-out infinite alternate!important;filter:drop-shadow(0 0 12px #fff8c8) drop-shadow(0 0 30px #f3c96f) drop-shadow(9px 14px 3px #5a483b38)!important}
+.archive-sticker.voice-ready{z-index:44!important;cursor:pointer;pointer-events:auto;animation:voice-ready-glow 1.05s ease-in-out infinite alternate!important;filter:drop-shadow(0 0 10px #fffbd2) drop-shadow(0 0 24px #f1c763) drop-shadow(8px 13px 3px #5a483b38)!important}
+@keyframes voice-character-glow{to{translate:0 -10px;scale:1.055;filter:drop-shadow(0 0 18px #fff) drop-shadow(0 0 38px #ffd36f) drop-shadow(12px 18px 5px #5a483b45)}}
+@keyframes voice-ready-glow{to{translate:0 -7px;scale:1.035;filter:drop-shadow(0 0 17px #fff) drop-shadow(0 0 34px #ffd36f) drop-shadow(10px 16px 4px #5a483b40)}}
+@media(prefers-reduced-motion:reduce){.childhood-subject,.childhood-gifts{translate:none!important;scale:1!important;transition:none}.archive-sticker.voice-glow{animation:none!important}}
+
+/* Interactive art uses depth and glow only; never draw browser focus rectangles. */
+.archive-sticker,.archive-sticker:focus,.archive-sticker:focus-visible,
+.liftable-text,.liftable-text:focus,.liftable-text:focus-visible,
+.floating-quote:focus,.floating-quote:focus-visible,
+.place-title:focus,.place-title:focus-visible,
+.bedtime-quote:focus,.bedtime-quote:focus-visible,
+.archive-choice:focus,.archive-choice:focus-visible,
+.portrait-composition img:focus,.portrait-composition img:focus-visible,
+.record-options button:focus,.record-options button:focus-visible{
+  outline:none!important;
+}
+.archive-choice[aria-pressed=true],.record-options button[aria-pressed=true]{outline:none!important}
+button:has(>img):focus,button:has(>img):focus-visible,
+.reference-role,.reference-role:hover,.reference-role:focus,.reference-role:focus-visible,.reference-role.chosen,
+.memory-frame,.memory-frame:focus,.memory-frame:focus-visible{
+  outline:none!important;border-color:transparent!important;box-shadow:none!important;
+}

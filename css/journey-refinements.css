@@ -1,0 +1,295 @@
+.bedtime-quote.story-arc{width:350px;height:88px;max-width:none;overflow:visible;transform:none;font:21px var(--hand),'Apple Color Emoji','Segoe UI Emoji';z-index:39!important}
+.bedtime-quote.story-arc span{position:absolute;bottom:auto;transform:none;transform-origin:center;white-space:nowrap;line-height:1.3}
+.story-arc.text-lifted{translate:0 -8px;scale:1.04}
+.toy-train{position:absolute;left:4625px;top:8%;width:190px;height:125px;padding:0;background:none;border:0;z-index:15;cursor:pointer;filter:drop-shadow(7px 10px 2px #5b534333);animation:toy-hover 4s ease-in-out infinite alternate}.toy-train svg{width:100%;height:100%}@keyframes toy-hover{to{translate:0 -9px;rotate:3deg}}
+.recording-studio{left:7760px;bottom:30%;width:125px;min-height:120px;padding:0;border:0;background:none;box-shadow:none;transform:rotate(-3deg);filter:drop-shadow(4px 8px 2px #6a405333)}.recording-studio:before{display:none}.recording-studio svg{width:100%;height:95px}.recording-studio span{font-size:22px;margin:0;white-space:nowrap}
+.rain-passage{top:5%;height:58%;width:340px;opacity:.17;z-index:3;background:repeating-linear-gradient(104deg,transparent 0 54px,#748ca5 55px 56px,transparent 57px 85px)}
+.dog-umbrella{display:none;position:absolute;left:5%;top:-36%;width:90%;height:75%;pointer-events:none;z-index:8;filter:drop-shadow(3px 6px 2px #55555533)}.dog-umbrella svg{width:100%;height:100%}.runner.has-umbrella .dog-umbrella{display:block}
+.journey-track{position:relative;height:10px!important;border:1px solid #827763;border-radius:20px;background:#e8dfbd88;overflow:visible;margin-bottom:0!important;box-shadow:inset 0 2px 3px #6b644325}.journey-track #progressFill{border-radius:20px;background:repeating-linear-gradient(110deg,#b68374 0 12px,#e5bc82 13px 24px);background-size:48px 100%;animation:progress-flow 2.5s linear infinite;height:100%;top:0}.journey-track #progressDog{width:14px;height:14px;top:-3px;border-radius:50%;rotate:0;background:#f6db9c;box-shadow:0 0 0 3px #b18d6555}.travel-controls{grid-template-columns:48px minmax(160px,30vw) 48px}@keyframes progress-flow{to{background-position:48px 0}}
+.terminal-invitation{position:fixed;bottom:130px;left:50%;translate:-50% 0;z-index:44;min-height:52px;max-width:85vw;padding:12px 24px;font:25px var(--hand);color:#703b4c;background:#ffe5bf;border:2px solid #9c6773;border-radius:45% 8% 35% 8%;box-shadow:5px 8px #75425433;cursor:pointer}.terminal-invitation[hidden]{display:none}
+.archive-choices{left:6.4%;top:16%;width:33.5%;height:72.5%;box-sizing:border-box;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:45%;gap:10px 8px;padding:5px 8px;overflow-x:hidden;overflow-y:auto;scroll-snap-type:y proximity}.archive-choice{min-width:0;min-height:0;height:100%;padding:5px;transform:none}.archive-choice:nth-child(even){transform:none}.archive-choice img{display:block;width:100%;height:100%;object-fit:contain}.portrait-composition{left:45%;width:47%}
+.archive-choice:hover,.archive-choice[aria-pressed=true]{transform:none;outline-offset:-4px}.archive-choice:hover img{scale:.96}
+.photo-workroom .archive-choices{grid-auto-rows:30%;row-gap:5%;padding-top:0;padding-bottom:0}.photo-workroom .archive-choice{padding:6px 8px;overflow:hidden}
+.archive-sticker[data-archive="6"],.archive-sticker[data-archive="7"]{z-index:36!important;max-width:220px!important;max-height:285px!important}
+.chapter-guide{left:50%!important;right:auto!important;top:92px!important;bottom:auto!important;width:min(420px,calc(100vw - 190px))!important;translate:-50% 0;text-align:center}.chapter-guide strong{font-size:22px}.chapter-guide button{padding:2px 8px}
+.chapter-guide{display:none!important}.progress-labels{position:absolute;left:-8px;right:-8px;top:-23px;display:flex;justify-content:space-between;pointer-events:auto;color:#674f45;font:15px var(--hand);text-shadow:1px 1px #fff6df}.progress-labels button{white-space:nowrap;border:0;background:none;color:inherit;font:inherit;padding:4px 7px;cursor:pointer;text-shadow:inherit;min-height:32px}.progress-labels button:hover,.progress-labels button:focus-visible{color:#9d5265;transform:translateY(-2px)}
+.match-game-status{position:absolute;left:30%;right:30%;top:4%;z-index:8;text-align:center}.match-game-status ol{display:flex;justify-content:center;gap:8px;margin:0 0 7px;padding:0;list-style:none;counter-reset:match-step}.match-game-status li{min-height:28px;padding:3px 10px;border:2px dashed #8b6570;border-radius:7px;background:#fff0d9dd;color:#755760;font:17px var(--hand);box-shadow:2px 3px #5d47522b}.match-game-status li:before{counter-increment:match-step;content:counter(match-step)' ';}.match-game-status li.is-current{background:#ffd68e;scale:1.06}.match-game-status li.is-done{opacity:.62;text-decoration:line-through}.strike-meter{height:9px;border:2px solid #80565f;border-radius:9px;background:#fff5df;overflow:hidden}.strike-meter i{display:block;width:0;height:100%;background:repeating-linear-gradient(110deg,#f19b56 0 9px,#ffe090 10px 18px);transition:width .08s}.strike-target span{position:absolute;inset:auto 4% 4%;font:17px var(--hand);color:#6e4650;text-shadow:1px 1px #fff1d7}.match-spark{position:absolute;z-index:10;width:8px;height:8px;border-radius:50%;background:#fff7a5;box-shadow:0 0 6px 3px #ff9b3f;pointer-events:none;animation:spark-pop .45s ease-out forwards}@keyframes spark-pop{to{translate:var(--spark-x,12px) -28px;scale:0;opacity:0}}.stage-match.is-spent{opacity:.45;pointer-events:none}
+@media(max-width:650px){.archive-choices{left:6.4%;width:33.5%;padding:2px;gap:5px;grid-auto-rows:48%}.archive-choice{padding:2px}.portrait-composition{left:45%;width:47%}.travel-controls{grid-template-columns:44px 110px 44px;gap:6px}.terminal-invitation{font-size:20px;bottom:150px}.bedtime-quote.story-arc{font-size:18px}.chapter-guide{top:78px!important;width:min(280px,calc(100vw - 110px))!important}.chapter-guide strong{font-size:18px}.chapter-guide button{font-size:16px}.match-game-status{left:12%;right:12%;top:2%}.match-game-status li{font-size:13px;padding:2px 5px}}
+@media(prefers-reduced-motion:reduce){.toy-train,#progressFill{animation:none!important}}
+
+/* Final mobile viewport corrections: landscape opening screens fill the
+   available stage, while only the photo booth is allowed to stay portrait. */
+@media (max-width:700px) and (orientation:landscape){
+  html.phone-landscape .illustrated-dialog,
+  html.phone-portrait .illustrated-dialog:not([data-stage="photo"]){
+    width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;
+    left:0!important;top:0!important;margin:0!important;translate:none!important;rotate:0deg!important;
+  }
+  html.phone-landscape .illustrated-dialog #dialogContent,
+  html.phone-portrait .illustrated-dialog:not([data-stage="photo"]) #dialogContent{width:100%;height:100%;display:grid;place-items:center}
+  html.phone-landscape .illustrated-dialog[data-stage="start"] .art-screen,
+  html.phone-landscape .illustrated-dialog[data-stage="childhood"] .art-screen,
+  html.phone-portrait .illustrated-dialog[data-stage="start"] .art-screen,
+  html.phone-portrait .illustrated-dialog[data-stage="childhood"] .art-screen{width:min(100vw,177.78vh)!important;height:auto!important;aspect-ratio:16/9!important}
+}
+
+/* Keep opening artwork at its native 16:9 ratio inside the full dialog. */
+@media (max-width:700px){
+  html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]) .art-screen{
+    width:min(100%,calc(100dvh * 1.7778))!important;
+    height:auto!important;aspect-ratio:16/9!important;max-height:100%!important;
+    margin:auto!important;
+  }
+}
+
+@media (max-width:700px){
+  html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]) .art-screen{
+    width:min(100%,calc(100dvh * 1.7778))!important;height:auto!important;
+    aspect-ratio:16/9!important;max-height:100%!important;margin:auto!important;
+  }
+}
+
+.journey-track{overflow:visible!important;z-index:40!important}
+.progress-labels{display:flex!important;visibility:visible!important;opacity:1!important;z-index:50!important;pointer-events:auto!important;white-space:nowrap!important}
+.progress-labels button{display:block!important;visibility:visible!important;opacity:1!important;color:#5c463d!important;text-shadow:0 1px #fff7e8!important}
+
+/* Translucent candy-glass gems, shared by the HUD, world and memory game. */
+.gem-icon,.gem>span{position:relative;width:25px;height:25px;border-radius:48% 52% 55% 45%;clip-path:none;background:radial-gradient(circle at 29% 22%,#fff 0 8%,#ffffff88 9% 18%,transparent 20%),radial-gradient(circle at 65% 68%,#b8f3ff 0 8%,transparent 29%),linear-gradient(145deg,#ffd9ec 4%,#f6a7cf 33%,#a8eaff 62%,#cab5ff 96%);box-shadow:inset -4px -5px 7px #8b6bc746,inset 4px 4px 7px #fff9,0 4px 8px #d875ad66;border:1px solid #fff8;rotate:-8deg}.gem-icon:after,.gem>span:after{content:"";position:absolute;inset:4px 7px 12px 5px;border-radius:50%;background:#fff9;filter:blur(1px)}
+.gem>span{width:32px;height:35px}.gem-three>span{border-radius:0;clip-path:polygon(50% 0,61% 31%,88% 12%,70% 41%,100% 50%,69% 59%,88% 88%,60% 70%,50% 100%,40% 70%,12% 88%,31% 59%,0 50%,31% 41%,12% 12%,39% 31%);background:radial-gradient(circle at 50% 45%,#fff 0 5%,#8ff5ff 9%,#e6a8ff 27%,#ffb7dc 52%,#fff4bd 76%,#c892ff 100%)}.gem-six>span{border-radius:54% 46% 52% 48%;scale:1.15 .86;background:radial-gradient(circle at 28% 20%,#fff 0 9%,transparent 18%),linear-gradient(145deg,#83e7ff,#cdfbc9 38%,#ffe3a9 61%,#dbaaff)}
+.gem{filter:drop-shadow(0 6px 8px #d875ad88)}.gem:before{border-color:#ffd5efcc;box-shadow:0 0 12px #f7b8e0}
+.jelly-gem{position:relative;display:block;width:74px;height:74px;filter:drop-shadow(0 9px 7px #9c668055)}.jelly-gem:after{content:"";position:absolute;left:20%;top:13%;width:26%;height:17%;border-radius:50%;background:#fffbd9cc;rotate:-24deg;filter:blur(1px)}
+.jelly-star{clip-path:polygon(50% 0,61% 31%,88% 12%,70% 41%,100% 50%,69% 59%,88% 88%,60% 70%,50% 100%,40% 70%,12% 88%,31% 59%,0 50%,31% 41%,12% 12%,39% 31%);background:radial-gradient(circle,#ecffff 0 5%,#8deeff 13%,#e8adff 32%,#ffb9da 58%,#fff0bd 78%,#b895ff)}
+.jelly-opal{width:82px;height:60px;border-radius:50%;rotate:-18deg;background:radial-gradient(circle at 28% 21%,#fff 0 7%,transparent 17%),linear-gradient(145deg,#8cecff,#b8ffd2 34%,#fff0b8 58%,#e8b5ff 82%,#94caff);box-shadow:inset -8px -8px 12px #797bd746,inset 7px 6px 9px #fff9}
+.jelly-heart{rotate:-45deg;width:58px;height:58px;margin-top:10px;border-radius:10px 0 13px 0;background:linear-gradient(135deg,#ff9fcd,#ffd9eb 52%,#efa4d8);box-shadow:inset -6px -5px 8px #b45d9d55,inset 6px 5px 9px #fff9}.jelly-heart:before,.jelly-heart:after{content:"";position:absolute;width:58px;height:58px;border-radius:50%;background:inherit;box-shadow:inherit}.jelly-heart:before{top:-29px;left:0}.jelly-heart:after{left:29px;top:0}.jelly-heart.jelly-gem:after{left:17%;top:-20%;width:18%;height:18%;z-index:2;background:#fff}
+.match-card b{place-items:center!important;background:linear-gradient(145deg,#fff9f0,#eadff1)!important}.match-card.open b,.match-card.matched b{display:grid}.match-card.matched .jelly-gem{animation:gemFloat 1.2s ease-in-out infinite alternate}
+@media(max-width:650px){.jelly-gem{width:48px;height:48px}.jelly-opal{width:54px;height:40px}.jelly-heart{width:38px;height:38px;margin-top:7px}.jelly-heart:before,.jelly-heart:after{width:38px;height:38px}.jelly-heart:before{top:-19px}.jelly-heart:after{left:19px}.gem-icon{width:21px;height:21px}}
+
+/* Final polish: keep signage legible and use only cutouts from the supplied finale artwork. */
+.action-sign{width:max-content;min-width:205px;max-width:285px}.action-sign span,.action-sign small{white-space:nowrap}
+.recording-studio{left:7560px!important}.recording-studio span{display:block;margin:2px 0 0;font-size:20px;white-space:nowrap;text-shadow:1px 2px #f7efd8}
+.source-depth{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:fill;pointer-events:none;filter:drop-shadow(7px 12px 4px #57343b55);transform-origin:center bottom}.source-dogs{clip-path:polygon(27% 56%,42% 54%,42% 93%,27% 93%,27% 56%,59% 56%,74% 56%,74% 94%,59% 94%);animation:original-dogs-depth 2.8s ease-in-out infinite alternate}.source-cake{z-index:2;clip-path:polygon(38% 46%,61% 46%,64% 87%,36% 87%);filter:drop-shadow(0 16px 10px #8d4c664d);animation:original-cake-depth 3.2s ease-in-out infinite alternate}
+.stage-match,.strike-target{inset:0!important;width:100%!important;height:100%!important;margin:0!important;padding:0!important;border:0!important;background:none!important;transform:none!important;overflow:hidden}.stage-match{z-index:7;clip-path:polygon(69% 53%,75% 50%,88% 87%,80% 91%)}.stage-match img,.strike-target img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}.stage-match.is-burning{filter:drop-shadow(0 0 9px #ff9b36) drop-shadow(0 0 15px #ffe36d)}.stage-match.is-burning:after{content:"";position:absolute;left:69%;top:53%;width:3.2%;aspect-ratio:1;border-radius:50% 50% 45% 55%;background:radial-gradient(circle at 50% 70%,#fff7a1 0 18%,#ffb12f 35%,#ff6330 65%,transparent 70%);filter:drop-shadow(0 0 9px #ff8b2c);animation:flame-flicker .35s ease-in-out infinite alternate}.strike-target{z-index:5;clip-path:polygon(4% 61%,29% 61%,29% 94%,4% 94%)}.strike-target span{left:9%;right:auto;bottom:10%;padding:4px 10px;border-radius:8px;background:#fff0d9df}.strike-target:hover{outline:none;filter:drop-shadow(0 0 8px #ffdc8d)}
+@keyframes original-dogs-depth{to{translate:0 -4px;scale:1.006}}@keyframes original-cake-depth{to{translate:0 -2px;scale:1.004}}@keyframes flame-flicker{to{translate:1px -3px;scale:.9 1.14}}
+@media(max-width:650px){.action-sign{min-width:190px;max-width:245px}.recording-studio{left:7560px!important}}
+.travel-controls{bottom:24px}.journey-track{margin-top:23px!important}
+@media(max-width:650px){.progress-labels{left:-3px;right:-3px;top:-20px;font-size:11px}}
+.gem-icon,.gem>span,.jelly-gem,.jelly-heart,.jelly-opal,.jelly-star{background:transparent url('../images/paper-gem.svg') center/contain no-repeat!important;border:0!important;box-shadow:none!important;clip-path:none!important;border-radius:0!important;rotate:0deg;filter:drop-shadow(3px 5px 1px #735d6335)}
+.gem-icon:after,.gem>span:after,.jelly-gem:before,.jelly-gem:after{display:none!important}.jelly-gem{width:76px;height:76px;margin:0}.jelly-opal{filter:hue-rotate(70deg) drop-shadow(3px 5px 1px #735d6335)}.jelly-star{filter:hue-rotate(300deg) drop-shadow(3px 5px 1px #735d6335)}
+.night-finale .source-depth{display:none}.night-finale .stage-match{inset:auto!important;left:67%!important;top:56%!important;width:13%!important;height:34%!important;clip-path:none!important;overflow:visible!important;touch-action:none;cursor:grab;z-index:21}.night-finale .stage-match img{object-fit:fill}.night-finale .stage-match:before,.night-finale .stage-match:after{display:none!important}.night-finale .stage-match:active{cursor:grabbing}.night-finale .strike-target{z-index:22}.night-finale .candle-target{z-index:19}.finale-darkness{position:absolute;inset:0;z-index:18;pointer-events:none;background:rgba(12,13,32,.92);transition:opacity 3s cubic-bezier(.22,.7,.28,1)}.match-alight .finale-darkness{background:radial-gradient(circle 135px at var(--flame-x) var(--flame-y),#ffcc6810,#141328ae 60%,#0c0d20eb 100%)}.moving-match-flame{display:none;position:absolute;left:var(--flame-x);top:var(--flame-y);z-index:25;width:18px;height:30px;translate:-50% -85%;background:radial-gradient(ellipse at 50% 75%,#fffbd6 0 22%,#ffcf54 30%,#f38c37 62%,transparent 70%);border-radius:60% 40% 50% 50%;filter:drop-shadow(0 0 14px #ffbc58);pointer-events:none}.match-alight .moving-match-flame{display:block}.celebrating .finale-darkness{opacity:0}.celebrating .moving-match-flame{display:none}.night-finale .match-game-status,.night-finale .screen-actions{z-index:26}.night-finale .screen-actions p{color:#fff1cd;text-shadow:0 2px 4px #222}.night-finale .birthday-flame{z-index:24}.night-finale.celebrating .screen-actions p{color:#6b3d46;text-shadow:0 1px #fff}.night-finale .strike-target span{background:#fff0d9;color:#674e4a}
+.strike-target{inset:auto!important;left:4%!important;top:61%!important;width:25%!important;height:33%!important;clip-path:none!important;overflow:visible!important}.strike-target img{display:none}
+.zone-hengdian .place-title{left:1040px!important;top:12%!important;max-width:270px;text-align:center}
+.road-obstacle span{display:none!important}
+.memory-scene-frame{position:fixed;inset:0;width:100%;height:100%;border:0;z-index:1000;background:#eee2cb}
+.reference-game{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;isolation:isolate}
+.reference-backdrop{display:block;width:100%;height:100%;object-fit:fill}
+.reference-slots{position:absolute;display:grid;gap:3%;perspective:1000px}
+.cards-reference .reference-slots{left:22%;top:33%;width:58%;height:37%;grid-template-columns:repeat(3,1fr)}
+.reference-role{border:0;background:transparent;cursor:pointer;border-radius:8%;transition:transform .3s,box-shadow .3s}
+.reference-role:hover,.reference-role:focus-visible,.reference-role.chosen{transform:translateY(-5px) rotate(-2deg);box-shadow:0 9px 0 #92695633,inset 0 0 0 3px #ca9562}
+.library-reference .reference-slots{left:28%;top:42%;width:44%;height:31%;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:8% 5%}
+.reference-pair{border:2px dashed #ad8a72;border-radius:12%;background:#e7cba6;cursor:pointer;min-height:0;transition:transform .35s,background .35s,box-shadow .35s}
+.reference-pair img{height:90%;width:90%;object-fit:contain;opacity:0;transform:rotateY(90deg);transition:transform .35s,opacity .2s}
+.reference-pair.revealed{background:#fff2d9;transform:translateY(-3px);box-shadow:3px 6px #88664b33}
+.reference-pair.revealed img{opacity:1;transform:rotateY(0)}
+.reference-pair.matched{border-color:#719079;background:#e7e9c9}
+.record-player{position:absolute;inset:0;background:#e7d5b7ee;backdrop-filter:blur(8px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5%;perspective:900px;animation:record-appear .35s ease-out}
+.records-direct{background:radial-gradient(circle at 50% 38%,#fff2cf 0 15%,#dbc5a4 72%,#b79f82 100%)}
+.record-disc{--disc-size:min(42vh,28vw,340px);flex:0 0 var(--disc-size);width:var(--disc-size);height:var(--disc-size);min-width:0;min-height:0;aspect-ratio:1/1;box-sizing:border-box;border:10px solid #3c3534;border-radius:50%;padding:calc(var(--disc-size)*.19);background:repeating-radial-gradient(circle,#29272b 0 2px,#4c4142 3px 4px);box-shadow:9px 18px 12px #4a302d55;transform:rotate(var(--tilt,0deg));cursor:pointer}
+.record-disc img{width:100%;height:100%;object-fit:cover;border-radius:50%;animation:record-spin 14s linear infinite}
+.record-disc.paused img{animation-play-state:paused}
+.record-close{position:absolute;left:3%;top:3%;width:44px;height:44px;background:#f5e6ca;border:2px solid #795b50;border-radius:50%;font-size:28px;color:#694b42;cursor:pointer}
+.record-options{display:flex;gap:10px;max-width:85%;overflow-x:auto;padding:8px}
+.record-options button{flex:0 0 54px;height:54px;padding:3px;border:2px solid #9a7761;border-radius:50%;background:#fff0d1;cursor:pointer;transition:translate .2s}
+.record-options button:hover{translate:0 -4px}.record-options img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.record-now-playing{margin:0;color:#694b42;font:clamp(14px,2vw,23px) var(--hand);text-align:center;background:transparent}.record-options button{position:relative}.record-options button span{position:absolute;right:-3px;bottom:-2px;font:14px var(--hand);color:#fff4db;background:#73584a;border-radius:50%;width:20px;height:20px}.record-options button[aria-pressed=true]{outline:3px solid #a26674;outline-offset:3px;translate:0 -4px}.record-disc{transition:transform .25s ease}.record-player{gap:3%}
+@media (max-width:700px){html:is(.phone-landscape,.phone-portrait) .record-player{gap:clamp(8px,2.5dvh,20px);padding:clamp(8px,2dvh,18px) max(48px,env(safe-area-inset-right));overflow:hidden}html:is(.phone-landscape,.phone-portrait) .record-disc{--disc-size:min(42dvh,42vw,260px);flex-basis:var(--disc-size);width:var(--disc-size);height:var(--disc-size);min-width:0;min-height:0}html:is(.phone-landscape,.phone-portrait) .record-options{max-width:min(90vw,760px);flex:0 0 auto}}
+@keyframes record-spin{to{rotate:360deg}}@keyframes record-appear{from{opacity:0;scale:.95}}
+@media(prefers-reduced-motion:reduce){.record-disc img,.record-player{animation:none}.reference-pair,.reference-pair img,.reference-role{transition:none}}
+.liftable-text{translate:0 0;filter:drop-shadow(5px 8px 2px #4b3c4550);animation:text-hover 3.6s ease-in-out infinite alternate}
+.liftable-text:hover,.liftable-text:focus-visible{translate:0 -9px;filter:drop-shadow(12px 18px 3px #4b3c4570)}
+.liftable-text.text-lifted{animation:none!important;transform:perspective(760px) translate3d(10px,-34px,150px) rotateX(8deg) rotateY(-11deg) rotate(var(--lift-angle)) scale(1.3)!important;filter:drop-shadow(18px 28px 4px #40343d75)!important}
+.archive-sticker.story-glow{z-index:40!important;animation:story-shine 1s ease-in-out infinite alternate!important;filter:drop-shadow(0 0 11px #fff4aa) drop-shadow(0 0 25px #e9b85f) drop-shadow(10px 15px 2px #56483335)!important}
+.bedtime-quote.story-glow{z-index:41!important;color:#8d415c;text-shadow:0 0 8px #fff8c5,0 0 18px #e8b862,4px 7px 2px #5f485040;scale:1.08}
+@keyframes text-hover{to{translate:0 -6px;filter:drop-shadow(8px 13px 2px #4b3c4565)}}
+@keyframes story-shine{to{translate:0 -7px;scale:1.045;filter:drop-shadow(0 0 18px #fff9bd) drop-shadow(0 0 35px #e7a94e) drop-shadow(12px 18px 2px #56483335)}}
+@media(max-width:650px){.liftable-text.text-lifted{transform:perspective(600px) translate3d(0,-22px,70px) rotate(-3deg) scale(1.17)!important}.sky-headpiece{width:105px!important}}
+@media(prefers-reduced-motion:reduce){.liftable-text,.archive-sticker.story-glow{animation:none!important}.liftable-text.text-lifted{transform:scale(1.1)!important}.finale-darkness{transition-duration:.25s}}
+
+/* Phone layout follows JS-measured visualViewport dimensions. Safari can keep
+   the CSS orientation stale for several frames after the device rotates. */
+@media (max-height:600px), (max-width:700px){
+  html.phone-landscape{--phone-width:var(--app-vw,100vw);--phone-height:var(--app-vh,100dvh)}
+  html.phone-landscape body{width:var(--phone-width);height:var(--phone-height);overflow:hidden}
+  html.phone-landscape .game{width:var(--phone-width);height:var(--phone-height);min-height:0}
+  html.phone-landscape .hud{padding:max(6px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) 0 max(12px,env(safe-area-inset-left));align-items:center}
+  .title-mark strong{font-size:18px}.title-mark span{font-size:9px}.gem-bag{font-size:18px;padding:0 4px}.hud-actions{gap:2px}.help-button{min-height:38px;font-size:16px;padding:0 5px}.round-button{width:38px;min-height:38px;font-size:18px}
+  .toast{top:54px;bottom:auto;max-width:70vw;padding:6px 14px;font-size:16px;white-space:nowrap}
+  .runner{left:12%;bottom:19%;width:154px;height:118px}.runner[data-action=plane]{bottom:29%}.runner[data-action=boat]{bottom:17%}.vehicle{width:200px;left:-20px;bottom:-27px}
+  .travel-controls{left:max(12px,env(safe-area-inset-left));bottom:max(8px,env(safe-area-inset-bottom));transform:none;display:grid;grid-template-columns:46px 46px;gap:8px}.travel-controls button{width:46px;height:46px;font-size:23px;background:#fff5dddc;box-shadow:3px 4px 0 #4f443f45;touch-action:none}.travel-controls button:first-child{grid-column:1}.travel-controls button:last-child{grid-column:2}.journey-track{position:fixed;left:50%;bottom:max(21px,calc(env(safe-area-inset-bottom) + 13px));width:min(38vw,270px);margin:0!important;translate:-50% 0}.progress-labels{left:4px;right:4px;top:-18px;font:600 10px/1 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:0;writing-mode:horizontal-tb;text-orientation:mixed}.progress-labels button{font:inherit!important;letter-spacing:0!important;writing-mode:horizontal-tb!important}
+  .player-actions{right:max(12px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));display:grid;grid-template-columns:38px 58px;grid-template-rows:29px 29px;gap:5px 7px;align-items:center}.player-actions button{margin:0;padding:0;touch-action:none;user-select:none;-webkit-user-select:none}.player-actions button b,.player-actions button span{display:block;line-height:1}.player-actions button b{font-size:15px}.player-actions button span{font-size:9px;margin-top:1px}.player-actions #jumpButton{grid-column:2;grid-row:1/3;width:58px;height:58px;min-width:58px;border-radius:50%;background:#f4ba79e8;border:2px solid #704e46;box-shadow:3px 5px 0 #593d3d55}.player-actions #jumpButton b{font-size:25px}.player-actions #jumpButton span{font-size:12px}.player-actions #interactButton{grid-column:1;grid-row:2}.player-actions .wardrobe-button{grid-column:1;grid-row:1;width:38px;height:29px;min-width:38px;font-size:10px!important}.player-actions #interactButton{width:38px;height:29px;min-width:38px;font-size:10px}.control-caption{display:none}
+  .floating-quote,.sharp-quotes p{font-size:15px;max-width:195px}.place-title strong{font-size:25px}.place-title span{font-size:11px}.archive-sticker.clear-sticker{max-width:122px!important;max-height:160px!important}.action-sign{min-width:140px;max-width:175px;min-height:43px;bottom:14%;padding:4px 7px}.action-sign span{font-size:15px}.action-sign small{font-size:11px}.sky-headpiece{width:84px!important;height:110px}.sky-headpiece img{height:88px}.sky-headpiece span{font-size:11px}
+  html.phone-landscape .paper-dialog,html.phone-landscape .illustrated-dialog{width:min(calc(var(--phone-width) - max(12px,env(safe-area-inset-left)) - max(12px,env(safe-area-inset-right))),calc((var(--phone-height) - 10px)*1.7778));height:auto;max-height:calc(var(--phone-height) - 6px);margin:auto;overflow:auto;border-width:2px;border-radius:10px}
+  .illustrated-dialog .dialog-close{width:38px;height:38px;right:2px;top:2px;font-size:22px}
+  html.phone-landscape .art-screen,html.phone-landscape .reference-game{width:100%;height:auto;min-height:0;aspect-ratio:16/9}.art-screen>.screen-art{object-fit:fill}.screen-actions{left:5%;right:5%;bottom:4%}.screen-actions p{font-size:14px;margin:4px}.ink-button{min-height:38px;padding:5px 12px;font-size:17px}
+  .start-screen .screen-actions{bottom:4%}.start-screen .ink-button{font-size:18px}.scene-heading{font-size:22px}.finale-screen{margin-bottom:0;overflow:hidden}.finale-screen .screen-actions{top:auto;bottom:1%;padding:0}.finale-screen .screen-actions p{font-size:12px;margin:2px}.match-game-status{left:22%;right:22%;top:2%}.match-game-status li{min-height:21px;padding:1px 6px;font-size:11px}.strike-target span{font-size:12px}
+  .record-player{gap:2%}.record-disc{width:29%;border-width:6px}.record-now-playing{font-size:15px}.record-options{max-width:82%;padding:3px;gap:7px}.record-options button{flex-basis:43px;height:43px}
+  .terminal-invitation{bottom:62px;min-height:40px;padding:6px 15px;font-size:18px}
+}
+.landscape-required{display:none!important}
+@media (max-width:700px){
+  html.portrait-landscape-fallback{overflow:hidden}
+  html.portrait-landscape-fallback body{
+    position:fixed;left:var(--app-vw);top:0;
+    width:var(--app-vh);height:var(--app-vw);
+    min-height:0!important;max-height:var(--app-vw);
+    overflow:hidden;transform:rotate(90deg);transform-origin:top left;
+  }
+  html.portrait-landscape-fallback .game{width:var(--app-vh);height:var(--app-vw);min-height:0}
+  /* Open dialogs are promoted to the browser top layer and therefore do not
+     inherit the body's rotation. Rotate and center those top-layer screens. */
+  html.portrait-landscape-fallback .paper-dialog,
+  html.portrait-landscape-fallback .illustrated-dialog{
+    position:fixed;inset:auto;left:50%;top:50%;margin:0;
+    translate:-50% -50%;rotate:90deg;
+  }
+  html.photo-portrait-mode.portrait-landscape-fallback .illustrated-dialog[data-stage="photo"]{
+    inset:0;left:0;top:0;width:var(--app-vw)!important;height:var(--app-vh)!important;
+    max-width:none!important;max-height:none!important;margin:0!important;
+    translate:none;rotate:0deg;border:0;border-radius:0;
+  }
+}
+
+/* Safari/WeChat can expose a portrait CSS viewport while the device is held
+   landscape. The game body is rotated in this mode; dialogs are top-layer
+   elements and need the swapped dimensions explicitly, otherwise they remain
+   a 1:1 centered window. */
+html.portrait-landscape-fallback .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]){
+  position:fixed!important;inset:0!important;left:0!important;top:0!important;
+  width:var(--app-vh)!important;height:var(--app-vw)!important;
+  max-width:none!important;max-height:none!important;margin:0!important;padding:0!important;
+  translate:none!important;rotate:0deg!important;border:0!important;border-radius:0!important;
+  overflow:hidden!important;pointer-events:auto!important;
+}
+html.portrait-landscape-fallback .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]) #dialogContent,
+html.portrait-landscape-fallback .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]) .art-screen{
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+}
+
+/* Real orientation gate: every game screen is landscape-only. The photo
+   booth opts out because its mobile controls intentionally use portrait. */
+@media (orientation:portrait) and (max-width:700px){
+  html.phone-portrait:not(.photo-portrait-mode) body{
+    position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;
+    max-height:none!important;transform:none!important;overflow:hidden!important;
+  }
+  html.phone-portrait:not(.photo-portrait-mode) .game,
+  html.phone-portrait:not(.photo-portrait-mode) .paper-dialog,
+  html.phone-portrait:not(.photo-portrait-mode) .illustrated-dialog{visibility:hidden!important;pointer-events:none!important}
+  html.phone-portrait:not(.photo-portrait-mode) .landscape-required{
+    display:flex!important;position:fixed;inset:0;z-index:2147483647;
+    align-items:center;justify-content:center;flex-direction:column;gap:16px;
+    width:100vw;height:100dvh;padding:24px;box-sizing:border-box;
+    background:#eee8d6;color:#593d43;text-align:center;
+  }
+  html.phone-portrait:not(.photo-portrait-mode) .landscape-required strong{font-size:28px}
+  html.phone-portrait:not(.photo-portrait-mode) .landscape-required small{font-size:16px}
+  html.phone-portrait:not(.photo-portrait-mode) .rotate-phone{
+    display:block;width:62px;height:100px;border:4px solid currentColor;border-radius:12px;
+    animation:turn-phone 1.8s ease-in-out infinite;
+  }
+  html.photo-portrait-mode .landscape-required,
+  html.phone-landscape .landscape-required{display:none!important}
+}
+@keyframes turn-phone{0%,30%{transform:rotate(0)}70%,100%{transform:rotate(90deg)}}
+html.phone-landscape .landscape-required{display:none!important}
+html.phone-portrait body{overflow:hidden}
+
+/* Both native landscape and the portrait fallback share the same compact
+   landscape canvas. Keep every 16:9 screen inside the measured viewport. */
+@media (max-height:700px), (max-width:700px){
+  html.phone-portrait{--phone-width:var(--app-vh);--phone-height:var(--app-vw)}
+  html.phone-portrait .hud{padding:6px 12px 0}
+  html.phone-portrait .travel-controls{bottom:8px}
+  html.phone-portrait .player-actions{bottom:8px}
+  html.phone-portrait .paper-dialog,
+  html.phone-portrait .illustrated-dialog{
+    width:min(calc(var(--phone-width) - 12px),calc((var(--phone-height) - 8px)*1.7778));
+    max-width:calc(var(--phone-width) - 12px);max-height:calc(var(--phone-height) - 8px);
+    margin:auto;overflow:hidden;border-width:2px;
+  }
+  html.phone-landscape .depth-opening,
+  html.phone-landscape .childhood-screen,
+  html.phone-landscape .finale-screen,
+  html.phone-portrait .depth-opening,
+  html.phone-portrait .childhood-screen,
+  html.phone-portrait .finale-screen{margin-bottom:0!important;min-height:0!important;overflow:hidden!important}
+  html.phone-landscape .depth-opening .screen-actions,
+  html.phone-landscape .childhood-screen .screen-actions,
+  html.phone-landscape .finale-screen .screen-actions,
+  html.phone-portrait .depth-opening .screen-actions,
+  html.phone-portrait .childhood-screen .screen-actions,
+  html.phone-portrait .finale-screen .screen-actions{top:auto!important;bottom:1%!important;padding:0!important}
+
+  /* Ultra-wide phone viewports (especially Safari/WeChat with visible browser
+     chrome) should feel like a full stage, not a centered modal card. The
+     complete 16:9 artwork stays visible while a covered copy extends its
+     colors into the otherwise empty side areas. */
+  html.phone-landscape .illustrated-dialog,
+  html.phone-portrait .illustrated-dialog{
+    width:var(--phone-width)!important;height:var(--phone-height)!important;
+    max-width:none!important;max-height:none!important;padding:0!important;
+    border:0!important;border-radius:0!important;box-shadow:none!important;
+    overflow:hidden!important;
+  }
+  html.phone-landscape .illustrated-dialog::backdrop,
+  html.phone-portrait .illustrated-dialog::backdrop{background:#d8cdb7;backdrop-filter:none}
+  html.phone-landscape .illustrated-dialog #dialogContent,
+  html.phone-portrait .illustrated-dialog #dialogContent{position:relative;width:100%;height:100%;overflow:hidden}
+  html.phone-landscape .illustrated-dialog[data-stage="start"],
+  html.phone-portrait .illustrated-dialog[data-stage="start"]{background:#efa9b4 url('../images/stage-start-27.webp') center/cover no-repeat}
+  html.phone-landscape .illustrated-dialog[data-stage="childhood"],
+  html.phone-portrait .illustrated-dialog[data-stage="childhood"]{background:#bde7e3 url('../images/stage-childhood-v3.webp') center/cover no-repeat}
+  html.phone-landscape .illustrated-dialog[data-stage="start"] .art-screen,
+  html.phone-landscape .illustrated-dialog[data-stage="childhood"] .art-screen,
+  html.phone-portrait .illustrated-dialog[data-stage="start"] .art-screen,
+  html.phone-portrait .illustrated-dialog[data-stage="childhood"] .art-screen{
+    width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+    margin:0 auto;aspect-ratio:auto;background:transparent;
+    box-shadow:0 0 38px #45363d55;
+  }
+  html.phone-landscape .illustrated-dialog .dialog-close,
+  html.phone-portrait .illustrated-dialog .dialog-close{
+    right:max(6px,env(safe-area-inset-right));top:max(6px,env(safe-area-inset-top));
+  }
+}
+
+/* Opening screens must use the complete mobile viewport. Older rules sized
+   them from the measured phone dimensions, which can be swapped by Safari's
+   portrait-to-landscape fallback and leaves a small centered card. */
+@media (max-width:700px){
+  html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]){
+    position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;
+    max-width:none!important;max-height:none!important;margin:0!important;padding:0!important;
+    translate:none!important;rotate:0deg!important;border:0!important;border-radius:0!important;
+    overflow:hidden!important;pointer-events:auto!important;
+  }
+  html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]) #dialogContent{
+    width:100%!important;height:100%!important;padding:0!important;display:grid!important;
+    place-items:center!important;overflow:hidden!important;
+  }
+  html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]) .art-screen{
+    width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+    aspect-ratio:auto!important;margin:0!important;box-shadow:none!important;
+  }
+}
+
+@media (max-width:700px){
+  html:is(.phone-landscape,.phone-portrait) .illustrated-dialog:is([data-stage="start"],[data-stage="childhood"]) .art-screen{
+    width:min(100%,calc(100dvh * 1.7778))!important;height:auto!important;
+    aspect-ratio:16/9!important;max-height:100%!important;margin:auto!important;
+  }
+}
+
+/* Capture fallback: the original pairs-reference.webp was not present in the supplied asset archive. */
+.library-reference.reference-backdrop-missing{background:radial-gradient(ellipse at 50% 42%,#fff7e7 0%,#f1e3c9 66%,#ddc8a9 100%);border:10px solid #c5a989;box-shadow:inset 0 0 0 3px #f8edda;}
+.library-reference.reference-backdrop-missing::before{content:'贴画碰个面';position:absolute;left:0;right:0;top:12%;text-align:center;color:#77594a;font:clamp(20px,3vw,38px) var(--hand);text-shadow:2px 3px #fff8e8;pointer-events:none;}

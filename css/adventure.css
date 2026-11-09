@@ -1,0 +1,103 @@
+/* The world is a layered paper theatre, not a row of rectangular screens. */
+:root{--hand:"Long Cang","Kalam",cursive;--ground:#a4b987}
+body,button,input,textarea{font-family:var(--hand);font-weight:400}
+.game{perspective:1100px;background:#e9e5d6}
+.sky-layer{background-color:#eeeadd;background-image:repeating-linear-gradient(0deg,transparent 0 47px,#7da4ad38 48px 49px,transparent 50px 52px);transform:rotate(-.3deg) scale(1.01)}
+.distant-layer{background:linear-gradient(90deg,#e9dba33b 0%,#a1bcb53b 24%,#81a6c94a 38%,#9dbdc33d 55%,#729c8c45 73%,#9da8bc55 86%,#bda99a99 100%);opacity:1}
+.zone-uk::before,.zone-hengdian::before{display:none}
+.zone{z-index:auto}.zone>[data-open]{z-index:12}
+.zone-shanghai{background:linear-gradient(90deg,transparent,#54657a22 20%,#384e6966);overflow:visible}
+.night-river{mask-image:linear-gradient(90deg,transparent,#000 40%);opacity:.5}
+.road{height:31%;bottom:0;clip-path:none;border:0;background:linear-gradient(180deg,#647e5633,transparent 30%),repeating-linear-gradient(90deg,transparent 0 93px,#516b4d55 95px 97px,transparent 99px 115px),repeating-linear-gradient(0deg,#a9ba88 0 55px,#799164 57px 59px,#b4c195 60px 112px);transform:perspective(650px) rotateX(28deg) scaleX(1.12);transform-origin:center bottom;box-shadow:0 -9px 0 #c6bb9c,0 -15px 1px #80776144,inset 0 12px 20px #36482c20;z-index:4}
+.road:after{content:"";position:absolute;bottom:0;left:0;right:0;height:28px;background:repeating-linear-gradient(90deg,#ad9d7c 0 38px,#817354 39px 41px);border-top:3px solid #736647}
+.road span{inset:53% 0 auto;height:26px;background:repeating-linear-gradient(90deg,#d7c9a8 0 79px,#918672 81px 83px);border:1px solid #786d5466;box-shadow:0 12px 0 #ae9d7c,0 17px 8px #393a3938}
+.title-mark,.gem-bag,.round-button,.floating-quote,.sharp-quotes p,.toast,.travel-controls button,.journey-track,.airport-sign{background:transparent;box-shadow:none}
+.title-mark strong{font-size:29px;letter-spacing:2px;text-shadow:2px 3px #d2b683}
+.title-mark span{font-size:12px;letter-spacing:2px;margin-bottom:8px}
+.hud{padding:22px 30px}.gem-bag{border:0;font-size:25px;filter:drop-shadow(3px 4px 0 #98795744)}
+.round-button{border:1.7px solid #414740;box-shadow:3px 4px #a99a7533}
+.round-button[aria-pressed=true]{background:#61897d;color:#faf3d8}
+.floating-quote{padding:0;font-size:25px;opacity:.78;line-height:1.6;text-shadow:2px 4px 1px #716b622e;max-width:310px;transform:rotate(-3deg);transition:scale .25s,opacity .6s,filter .25s;}
+.floating-quote:hover{scale:1.06;filter:drop-shadow(8px 12px 2px #77684966)}
+.quote-one{left:1170px;top:22%}.quote-two{left:1790px;top:29%}.quote-home{color:#343f45}
+.place-title{top:17%;left:240px}.place-title strong{font-size:54px}.zone-childhood .place-title{left:900px;top:14%;}.zone-hengdian .place-title{left:390px;top:7%;z-index:38}.place-title span{font-size:19px;margin-bottom:8px}
+.opening{position:absolute;left:90px;top:13%;width:600px;z-index:16;transform:rotate(-3deg);pointer-events:none}
+.opening button,.opening img{pointer-events:auto}
+.opening img{width:100%;filter:drop-shadow(6px 9px 0 #ad755522);transition:transform .3s}
+.opening img:hover{transform:translateY(-8px) rotate(2deg)}
+.opening p{margin:12px 0 12px 90px;font-size:24px;letter-spacing:3px;transform:rotate(1deg)}
+.start-journey{border:0;border-bottom:2px dashed #a54d45;background:none;cursor:pointer;margin-left:92px;min-height:48px;font-size:23px;color:#963e34;transform:rotate(-2deg)}
+.opening small{display:none}
+.paper-house{left:900px;bottom:26%;width:270px;height:230px;background:#bc7560;transform:rotate(-2deg) skewY(-2deg);box-shadow:12px 5px #8d604b,22px 18px 8px #4d4b3735}
+.paper-house .roof{width:325px}.paper-house .door{height:110px;width:68px}
+.shop{left:1420px;bottom:26%;width:235px;height:185px;transform:rotate(2deg) skewY(-2deg)}
+.kiddie-ride{left:1830px;bottom:26%;transform:scale(.75)}
+.gem-one{left:640px;bottom:31%}
+.paper-house,.shop,.phone-booth,.library,.cafe,.paifang,.theater,.home-window{filter:drop-shadow(9px 12px 4px #424c3828);transition:filter .3s,scale .3s}
+[data-open]:hover{filter:drop-shadow(14px 22px 5px #424c3855);scale:1.025}
+.phone-booth{border-radius:25px 24px 0 0;box-shadow:12px 5px #743d37,22px 19px 7px #41423833;transform:rotate(-2deg)}
+.library{transform:rotate(1deg) skewY(-1deg);box-shadow:16px 6px #5c5649,24px 20px 8px #41423833}
+.paifang{box-shadow:10px 6px #88765344}.home-window{background:#947763;transform:skewY(-3deg)}
+.paper-plane,.paper-boat{display:none}.paper-globe{opacity:.4;scale:.72;top:28%;border-style:dashed}
+.sea{z-index:5;inset:67% -200px 0;background:repeating-linear-gradient(177deg,#7ca2ad 0 27px,#c2d5c66b 28px 30px,#8eaeb8 31px 72px);border:0;mask-image:linear-gradient(90deg,transparent,#000 13%,#000 87%,transparent)}
+.night-river{z-index:5}
+.sea span{opacity:.4}.airport-sign{font-size:26px;border:0;bottom:35%}.airport-sign:after{height:100px;width:3px}
+.archive-sticker{max-width:190px;max-height:245px;pointer-events:auto;cursor:pointer;transform-origin:50% 90%;filter:drop-shadow(9px 14px 2px #453e3640);animation:paperSway 5.4s ease-in-out infinite alternate;animation-delay:var(--delay);transition:filter .3s,scale .3s}
+.archive-sticker:hover,.archive-sticker:focus{scale:1.12;filter:drop-shadow(18px 25px 3px #453e3659);z-index:19}
+.archive-sticker.is-waving{animation:greet .65s ease-in-out 3}
+.archive-sticker.feature-role{max-width:180px;max-height:250px;z-index:8;mix-blend-mode:multiply;filter:drop-shadow(7px 12px 2px #453e3638);border-radius:0;clip-path:none}
+.stickers{z-index:auto}.archive-sticker{z-index:10}.archive-sticker:nth-child(2){z-index:13}
+.runner{position:absolute;left:23%;bottom:16%;width:270px;height:205px;z-index:26;filter:drop-shadow(6px 10px 2px #45432f44);transform:none!important;transition:bottom .7s ease;}
+.runner canvas{width:100%;height:100%;display:block}.runner>img,.runner>.scarf{display:none}
+.runner:after{content:"";position:absolute;left:8%;right:0;bottom:-4px;height:12px;background:#55553a35;border-radius:50%;filter:blur(5px);z-index:-1}
+.runner[data-action=plane]{bottom:39%}.runner[data-action=boat]{bottom:18%}.runner[data-action=plane]:after{opacity:0}
+.runner canvas{position:relative;z-index:2}
+.vehicle{position:absolute;left:-35px;bottom:-42px;width:345px;height:150px;z-index:0;pointer-events:none;filter:drop-shadow(8px 14px 3px #484c3c33)}
+.vehicle svg{width:100%;height:100%;overflow:visible}.runner[data-action=plane] canvas{transform:translateY(-15px) scale(.63);transform-origin:50% 100%}.runner[data-action=boat] canvas{transform:translateY(-17px) scale(.8);transform-origin:50% 100%}
+.runner:not([data-action=plane]):not([data-action=boat]) .vehicle{display:none}
+.scenery{position:absolute;inset:0;pointer-events:none;z-index:6}.scenery.front{z-index:30}.scenery.far{z-index:2;opacity:.4}
+.scenery-item{position:absolute;bottom:25%;filter:drop-shadow(9px 11px 1px #58503936);transform-origin:50% 100%}
+.scenery.front .scenery-item{bottom:5%;filter:drop-shadow(12px 16px 3px #47483640)}
+.scenery.far .scenery-item{bottom:31%;filter:none}
+.scenery-item svg{width:100%;height:100%;overflow:visible}.scenery-item.cloud{top:12%;bottom:auto;filter:drop-shadow(10px 18px 4px #5c646121)}
+.world:after{content:"";position:absolute;z-index:1;left:0;right:0;bottom:26%;height:13%;background:#85986c2e;clip-path:polygon(0 98%,4% 50%,9% 90%,13% 20%,19% 90%,24% 38%,29% 90%,35% 20%,41% 82%,48% 40%,55% 92%,64% 10%,71% 80%,77% 40%,84% 92%,90% 20%,100% 85%,100% 100%,0 100%)}
+.chapter-guide{position:fixed;z-index:39;left:30px;top:112px;width:270px;pointer-events:none;font-size:17px;color:#4d574c;text-shadow:1px 2px #e6e1cd}
+.chapter-guide strong{display:block;font-size:20px;letter-spacing:1px;color:#7f4b3a;margin-bottom:8px}.chapter-guide p{margin:0;line-height:1.65}.chapter-guide button{pointer-events:auto;background:none;border:0;border-bottom:1px dashed #4d574c;padding:8px 0;font-size:16px;cursor:pointer;min-height:44px}
+.game[data-start=false] .chapter-guide{display:none}
+.travel-controls{grid-template-columns:48px minmax(120px,26vw) 48px;bottom:25px;gap:17px}
+.travel-controls button{border-radius:40% 50% 48% 43%;box-shadow:3px 4px #60634533}
+.journey-track{height:7px;border:0;border-bottom:2px dashed #595e4c}.journey-track span{background:#a45d49}.journey-track i{width:14px;height:14px;background:#b8954e;border:0;rotate:45deg;border-radius:2px}
+.player-actions{position:fixed;bottom:24px;right:30px;z-index:40;display:flex;gap:12px}
+.player-actions button{background:none;border:1.5px solid #565b48;border-radius:43% 47% 40% 49%;width:54px;height:48px;cursor:pointer;font-size:18px;box-shadow:3px 5px #61644826}
+.control-caption{position:fixed;left:30px;bottom:28px;font-size:14px;color:#535d4d;z-index:39;line-height:1.5}
+.toast{top:auto;bottom:102px;font-size:24px;color:#754638;border:0;text-align:center;text-shadow:1px 1px #f1e8ce,2px 2px #f1e8ce;filter:drop-shadow(3px 4px 1px #4f433a22)}
+.drop-cache{position:absolute;z-index:21;bottom:23%;width:70px;height:65px;background:none;border:0;cursor:pointer;filter:drop-shadow(8px 10px 2px #43382955)}
+.road-obstacle{position:absolute;z-index:24;bottom:22%;width:105px;height:72px;border:3px solid #555247;border-radius:54% 43% 38% 48%;background:#86877b;box-shadow:inset 12px 10px #a8a793,8px 9px #41423835;cursor:pointer;transform:rotate(-5deg)}.road-obstacle:nth-of-type(even){transform:rotate(4deg)}.road-obstacle span{position:absolute;left:-22px;right:-22px;top:-37px;color:#76503e;font-size:18px;white-space:nowrap;text-shadow:1px 2px #eee4cb}.rain-passage{position:absolute;z-index:18;top:0;width:520px;height:72%;pointer-events:none;background:repeating-linear-gradient(104deg,transparent 0 24px,#748ca54d 25px 27px,transparent 28px 46px);animation:rain-slide .7s linear infinite}.rain-passage span{position:absolute;left:42%;bottom:9%;font-size:110px;filter:drop-shadow(8px 12px 2px #3f4d5644)}.rain-passage b{position:absolute;left:12%;top:23%;font-size:24px;color:#4d6170;transform:rotate(-4deg);text-shadow:2px 3px #e5dfcf}.recording-studio{position:absolute;z-index:24;bottom:31%;width:220px;min-height:120px;border:3px solid #514a43;background:#c99679;box-shadow:10px 12px #4e4b4133;transform:rotate(2deg);cursor:pointer}.recording-studio:before{content:'♪';display:block;font-size:42px;color:#814357}.recording-studio b,.recording-studio span{display:block;font-family:var(--hand)}.recording-studio b{font-size:27px}.recording-studio span{font-size:18px;margin-top:6px}.recording-studio:hover{translate:0 -8px;filter:drop-shadow(8px 13px 2px #3f423c44)}@keyframes rain-slide{to{background-position:34px 40px}}
+.drop-cache svg{width:100%;height:100%}.drop-cache:after{content:"敲一敲";position:absolute;top:-25px;left:0;width:100%;font-size:17px;color:#77533a;white-space:nowrap}.drop-cache.opened{opacity:.45}.drop-cache.opened:after{content:"已找到"}
+.world-drop{position:absolute;z-index:31;width:48px;height:52px;border:0;background:none;font-size:35px;color:#b56e42;text-shadow:3px 4px #e6bd58;cursor:pointer;animation:dropLand .5s ease-out both,gemFloat 1.5s .5s ease-in-out infinite alternate}
+.reward-particle{position:fixed;z-index:100;pointer-events:none;font-size:28px;color:#bc8631;filter:drop-shadow(0 0 5px #f4d776)}
+.paper-dialog{background:#d7caa8;border:2px solid #554d3c;box-shadow:12px 16px #77654655;border-radius:2% 1% 2% 1%}
+.dialog-scene{background-color:#e4d8b9}.dialog-close{background:transparent}.dialog-scene p{font-family:var(--hand);line-height:1.6}.action-button,.upload-label{color:#304d47;background:transparent;box-shadow:3px 5px #786c4933;border-color:#6e765c;transform:rotate(-1deg)}
+.polaroid{background:#c7b78f}.polaroid>*{background:transparent}.role-options button,.flip-card{background:transparent!important}.matchbox{background:#bb8765}
+.route-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:24px 0}.route-list button{background:none;border:0;border-bottom:1px dashed #8d836a;text-align:left;min-height:68px;cursor:pointer;font-size:23px;padding:12px}.route-list small{display:block;font-size:16px;color:#596454;margin-top:8px}.route-list .done{color:#477666}
+.room-guide{border-top:1px dashed #968166;padding-top:12px;font-size:18px!important;color:#78563c}.guide-heading{display:block;font-size:19px;color:#8a503c;margin-bottom:8px}
+.notes-wall input,.notes-wall textarea{background:transparent}.notes-wall form{background:#d9be8b}
+.title-mark strong,.place-title strong,.dialog-scene h2{font-family:"ZCOOL KuaiLe",var(--hand)}
+.title-mark span{font-family:"Patrick Hand",var(--hand)}
+.floating-quote,.sharp-quotes,.scene-hint,.chapter-guide,.opening p,.opening small{font-family:var(--hand)}
+.floating-quote{font-size:30px}.chapter-guide{font-size:21px}.chapter-guide strong{font-size:23px}.chapter-guide button{font-size:19px}.opening p{font-size:28px}.opening small{font-size:20px}.control-caption{font-size:17px}.title-mark strong{font-size:27px}.scene-hint{font-size:24px}
+.paper-house.hand-drawn{background:none;border:0;box-shadow:none;width:315px;height:325px;bottom:24%;filter:drop-shadow(12px 17px 2px #48452e44)}
+.paper-house.hand-drawn>svg{width:100%;height:100%;overflow:visible}
+.paper-house.hand-drawn:hover{scale:1.03;filter:drop-shadow(18px 25px 3px #48452e55)}
+.theater.hand-drawn-stage,.director-chair.hand-drawn-chair{background:none;border:0;box-shadow:none;clip-path:none;filter:drop-shadow(12px 17px 2px #51463144)}
+.theater.hand-drawn-stage{height:300px}.theater.hand-drawn-stage:before{display:none}.hand-drawn-stage svg,.hand-drawn-chair svg{width:100%;height:100%;overflow:visible}.hand-drawn-stage span{position:absolute;top:58px;left:0;right:0;color:#eadab2;font-family:var(--hand);font-size:28px}.hand-drawn-chair span{position:absolute;top:44px;left:0;right:0;font-family:var(--hand);font-size:26px}
+.game-timer{font-size:30px;color:#954735;margin:8px 0}.library-game{background:linear-gradient(#e2d8bdcc,#c8d3c4cc),url('../images/archive/6.png') right bottom/260px auto no-repeat}.book-grid{margin:20px auto 0;max-width:720px;grid-template-columns:repeat(3,1fr)!important;gap:18px!important}.book-grid button.match-card{position:relative;height:128px!important;border:3px solid #65594c;background:#d9c59d;transform:rotate(var(--card-rot));box-shadow:7px 9px #665b4930;overflow:hidden}.match-card span,.match-card b{position:absolute;inset:0;display:grid;place-items:center;font-size:42px}.match-card b{opacity:0;background:#e7e0c9;font-size:60px}.match-card.open b,.match-card.matched b{opacity:1}.match-card.open span,.match-card.matched span{opacity:0}.match-card.matched{border-color:#ae7a2e;box-shadow:0 0 0 5px #e8c96a88,8px 10px #665b4930}.match-card.matched:after{content:'一对';position:absolute;right:6px;bottom:3px;color:#8b5d25;font-size:19px}
+.role-options button{padding:0;border:2px dashed transparent;cursor:pointer}.role-options .is-selected{border-color:#9a5e41}.dialog-scene .action-button:disabled{opacity:.45;cursor:not-allowed}
+.gate-key{font-size:70px;color:#aa742c;text-align:center;animation:gemFloat 1.5s infinite alternate}.gem-jar{display:none}.scene-hint{position:absolute;bottom:18%;left:920px;font-size:20px;transform:rotate(-3deg);color:#77523b;pointer-events:none}
+@keyframes paperSway{from{transform:perspective(700px) rotateY(-7deg) rotate(var(--rot)) translateY(0)}to{transform:perspective(700px) rotateY(6deg) rotate(calc(var(--rot) + 2deg)) translateY(-9px)}}
+@keyframes greet{0%,100%{transform:rotate(var(--rot))}30%{transform:rotate(-9deg) translateY(-16px)}65%{transform:rotate(9deg) translateY(-8px)}}
+@keyframes dropLand{from{translate:0 -130px;rotate:-90deg}to{translate:0 0;rotate:0deg}}
+@media(min-width:651px){.chapter-guide{top:auto;bottom:110px;width:280px;font-size:21px}.chapter-guide strong{font-size:22px}.control-caption{font-size:16px}.quote-flight-a{top:16%}}
+@media(max-width:650px){.hud{padding:17px 16px}.title-mark strong{font-size:23px}.title-mark span{font-size:10px}.gem-bag{padding:0 5px;font-size:21px}.hud-actions{gap:3px}.round-button{width:42px;min-height:42px}.opening{left:25px;top:25%;width:330px}.opening p{margin:12px 0 0 25px;font-size:19px;letter-spacing:1px}.opening small{margin-left:25px;font-size:17px}.start-journey{margin-left:25px;font-size:21px}.runner{left:13%;width:215px;height:165px;bottom:18%}.vehicle{width:280px;left:-25px;bottom:-38px}.chapter-guide{top:99px;left:22px;width:290px;font-size:19px}.chapter-guide strong{font-size:21px;margin-bottom:4px}.chapter-guide button{padding:0}.control-caption{left:20px;bottom:88px;font-size:15px}.travel-controls{left:22px;transform:none;grid-template-columns:48px 90px 48px;gap:12px}.player-actions{right:18px;gap:8px}.player-actions button{width:45px}.place-title{top:27%;left:100px}.place-title strong{font-size:40px}.floating-quote{font-size:23px;max-width:260px}.archive-sticker{max-width:165px;max-height:225px}.paper-house{scale:.85;transform-origin:bottom}.toast{bottom:145px;font-size:20px}.route-list{grid-template-columns:1fr}.dialog-scene{padding:52px 22px 30px}.dialog-scene h2{font-size:34px}.paper-dialog{max-height:88dvh}.scene-hint{font-size:17px}.paper-globe{scale:.55}.quote-flight-a{top:29%}.quote-flight-b{top:55%}.quote-one{top:29%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.archive-sticker{transform:rotate(var(--rot))}}
+@media(max-width:650px){.book-grid{gap:8px}.book-grid button{height:55px}.library-game>p{font-size:18px;margin:10px 0}.library-game .game-timer{font-size:25px}.role-options,.flip-cards{grid-template-columns:repeat(3,1fr);gap:8px}.role-options button,.flip-card{min-height:160px}.role-options img,.flip-card img{height:150px}.polaroid{padding:10px 10px 30px}}

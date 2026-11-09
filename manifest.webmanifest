@@ -1,0 +1,18 @@
+{
+  "name": "噜噜晓的27年 · 打开地球 Online 新副本",
+  "short_name": "噜噜晓的27年",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9e6d7",
+  "theme_color": "#e9e6d7",
+  "icons": [
+    {
+      "src": "images/pets-birthday.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

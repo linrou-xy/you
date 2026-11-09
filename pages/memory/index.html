@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#65705f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="噜噜晓的27年">
+  <link rel="manifest" href="../../manifest.webmanifest?v=fit34">
+  <link rel="apple-touch-icon" href="../../images/pets-birthday.png">
+  <title>噜噜晓的朋友们 · 群像手帐</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../../css/memory/styles.css?v=fit45">
+</head>
+<body>
+<a class="exit-memory" href="../../index.html" aria-label="退出回忆册，返回生日冒险"><span aria-hidden="true">←</span> 退出回忆册</a>
+<div class="memory-scenery" aria-hidden="true">
+  <i class="hanging-cloud cloud-a"></i><i class="hanging-cloud cloud-b"></i><i class="hanging-cloud cloud-c"></i>
+  <i class="doodle-flower flower-a"><b></b></i><i class="doodle-flower flower-b"><b></b></i>
+  <i class="doodle-butterfly butterfly-a"></i><i class="doodle-butterfly butterfly-b"></i>
+</div>
+<main class="room">
+  <header class="book-header">
+    <span>GROUP MEMORIES</span><h1>噜噜晓的朋友们</h1><div class="memory-music"><span id="orientation" class="sr-only">打开的书页</span><label for="memory-track">音乐</label><select id="memory-track" aria-label="选择回忆册音乐"><option value="">关闭音乐</option><option value="brave">勇敢的公主</option><option value="bedtime">床边故事</option><option value="peach">桃花笑一笑</option><option value="remember">Remember Me</option></select><audio id="memory-audio" preload="metadata"></audio></div>
+  </header>
+  <section class="stage" aria-label="可交互群像手帐翻页书">
+    <p class="scribble-prompt"><span>写一句话，</span><span>给27岁的噜噜晓。</span></p>
+    <div class="mode-switch" aria-label="祝福创作方式">
+      <button id="draw-mode" type="button" aria-pressed="false">手写</button>
+      <button id="type-mode" type="button" aria-haspopup="dialog">打字祝福</button>
+      <button id="share-wall" type="button" aria-haspopup="dialog">生成分享图</button>
+    </div>
+    <div id="wish-wall" class="wish-wall" aria-live="polite">
+      <blockquote class="fixed-wish">
+        <p>谢谢你曾努力地找到我，选择我。<br>这一次，换我们沿着你的路，走来见你。</p>
+      </blockquote>
+    </div>
+    <div class="book-rig">
+      <div id="book" class="book" data-page-width="640" data-page-height="426">
+        <article class="book-page art-page cloth recto" data-density="hard" aria-label="封面">
+          <h2 class="cover-title hand-title"><span class="title-line"><i>噜</i><i>噜</i><i>晓</i><i>的</i></span><span class="title-line"><i>朋</i><i>友</i><i>们</i></span></h2>
+          <div class="cover-collage" aria-label="完整手部、两只小狗与小物组成的散落手帐贴纸">
+            <span class="cover-sticker hands-main" aria-hidden="true"></span>
+            <span class="cover-sticker ring-photo" aria-hidden="true"></span>
+            <span class="cover-sticker ring-pouch" aria-hidden="true"></span>
+            <span class="cover-sticker dog-duo" aria-hidden="true"></span>
+            <span class="cover-sticker dog-leaf" aria-hidden="true"></span>
+            <span class="cover-sticker dog-paw" aria-hidden="true"></span>
+            <span class="cover-sticker cake-sticker" aria-hidden="true"></span>
+            <span class="cover-sticker portrait-sticker" aria-hidden="true"></span>
+          </div>
+          <span class="cover-foot">翻页查看回忆录 <b aria-hidden="true">→</b></span>
+        </article>
+        <article class="book-page art-page paper verso" aria-label="开篇文字"><div class="inner-quote opening-quote"><p>remember me.<br>不是记住我，而是记住这一刻。</p></div></article>
+        <article class="book-page art-page paper recto" aria-label="照片 1"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/04-card-IMG_9375.jpg" alt="第 1 张群像手帐卡"></figure><p class="folio">01</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 2"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/05-card-IMG_9376.jpg" alt="第 2 张群像手帐卡"></figure><p class="folio">02</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 3"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/01-card-IMG_9379.jpg" alt="第 3 张群像手帐卡"></figure><p class="folio">03</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 4"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/02-card-IMG_9380.jpg" alt="第 4 张群像手帐卡"></figure><p class="folio">04</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 5"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/03-card-IMG_9381.jpg" alt="第 5 张群像手帐卡"></figure><p class="folio">05</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 6"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/07-card-IMG_9332.jpg" alt="第 6 张群像手帐卡"></figure><p class="folio">06</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 7"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/08-card-IMG_9333.jpg" alt="第 7 张群像手帐卡"></figure><p class="folio">07</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 8"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/10-card-IMG_9335.jpg" alt="第 8 张群像手帐卡"></figure><p class="folio">08</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 9"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/11-card-IMG_9336_2.jpg" alt="第 9 张群像手帐卡"></figure><p class="folio">09</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 10"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/12-card-IMG_9337.jpg" alt="第 10 张群像手帐卡"></figure><p class="folio">10</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 11"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/14-card-IMG_9339.jpg" alt="第 11 张群像手帐卡"></figure><p class="folio">11</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 12"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/15-card-IMG_9340.jpg" alt="第 12 张群像手帐卡"></figure><p class="folio">12</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 13"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/16-card-IMG_9341.jpg" alt="第 13 张群像手帐卡"></figure><p class="folio">13</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 14"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/17-card-IMG_9342.jpg" alt="第 14 张群像手帐卡"></figure><p class="folio">14</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 15"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/18-card-IMG_9343.jpg" alt="第 15 张群像手帐卡"></figure><p class="folio">15</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 16"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/19-card-IMG_9344.jpg" alt="第 16 张群像手帐卡"></figure><p class="folio">16</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 17"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/21-card-IMG_9396.jpg" alt="第 17 张群像手帐卡"></figure><p class="folio">17</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 18"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/27-card-IMG_9402.jpg" alt="第 18 张群像手帐卡"></figure><p class="folio">18</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 19"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/28-card-IMG_9403.jpg" alt="第 19 张群像手帐卡"></figure><p class="folio">19</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 20"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/22-card-IMG_9397.jpg" alt="第 20 张群像手帐卡"></figure><p class="folio">20</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 21"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/23-card-IMG_9398.jpg" alt="第 21 张群像手帐卡"></figure><p class="folio">21</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 22"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/24-card-IMG_9399_2.jpg" alt="第 22 张群像手帐卡"></figure><p class="folio">22</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 23"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/25-card-IMG_9400.jpg" alt="第 23 张群像手帐卡"></figure><p class="folio">23</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 24"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/29-card-IMG_9404.jpg" alt="第 24 张群像手帐卡"></figure><p class="folio">24</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 25"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/30-card-IMG_9406.jpg" alt="第 25 张群像手帐卡"></figure><p class="folio">25</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 26"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/31-card-IMG_9407.jpg" alt="第 26 张群像手帐卡"></figure><p class="folio">26</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 27"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/32-card-IMG_9408.jpg" alt="第 27 张群像手帐卡"></figure><p class="folio">27</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 28"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/33-card-IMG_9409.jpg" alt="第 28 张群像手帐卡"></figure><p class="folio">28</p></article>
+        <article class="book-page art-page paper recto" aria-label="照片 29"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/34-card-IMG_9410.jpg" alt="第 29 张群像手帐卡"></figure><p class="folio">29</p></article>
+        <article class="book-page art-page paper verso" aria-label="照片 30"><figure class="plate card-plate"><img loading="lazy" decoding="async" src="../../images/memory/photos/06-card-IMG_9331.jpg" alt="第 30 张群像手帐卡"></figure><p class="folio">30</p></article>
+        <article class="book-page art-page paper recto" aria-label="结尾文字"><div class="inner-quote ending-quote"><p>喂！和我一起，在自由的世界里起舞吧！</p></div></article>
+        <article class="book-page art-page paper verso" aria-label="版权页"><div class="colophon"><p>噜噜晓的朋友们</p><p class="small-print">PHOTO FLIPBOOK · 2026</p></div></article>
+        <article class="book-page art-page endpaper recto" aria-label="后衬页"></article>
+        <article class="book-page art-page cloth verso" data-density="hard" aria-label="封底"></article>
+      </div>
+      <canvas id="writing-canvas" class="writing-canvas" aria-label="手写涂鸦区域"></canvas>
+      <button id="desk-pen" class="desk-pen" type="button" aria-pressed="false" aria-label="拿起笔开始书写" title="拿起笔写字"></button>
+      <div class="writing-tools" aria-label="书写工具">
+        <button class="ink-swatch is-active" type="button" data-ink="#5b382d" aria-label="咖色墨水" title="咖色墨水"></button>
+        <button class="ink-swatch" type="button" data-ink="#c96f7b" aria-label="粉色墨水" title="粉色墨水"></button>
+        <button class="ink-swatch" type="button" data-ink="#27727a" aria-label="青色墨水" title="青色墨水"></button>
+        <button id="clear-writing" class="clear-writing" type="button" aria-label="清除当前页书写" title="清除当前页书写">×</button>
+      </div>
+    </div>
+    <dialog id="wish-composer" class="wish-dialog">
+      <form id="wish-form" method="dialog">
+        <div class="dialog-heading">
+          <h2>写给噜噜晓</h2>
+          <button class="dialog-close" type="button" data-close-dialog aria-label="关闭" title="关闭">×</button>
+        </div>
+        <label class="field-label" for="wish-name">昵称</label>
+        <input id="wish-name" name="name" type="text" maxlength="16" autocomplete="nickname" required placeholder="你的名字">
+        <label class="field-label" for="wish-message">生日祝福</label>
+        <textarea id="wish-message" name="message" maxlength="120" rows="4" required placeholder="写一句想对噜噜晓说的话"></textarea>
+        <fieldset>
+          <legend>便签款式</legend>
+          <div class="choice-row note-style-choices">
+            <label><input type="radio" name="noteStyle" value="pink" checked><span class="note-style-pink" title="胶带信封折面"></span></label>
+            <label><input type="radio" name="noteStyle" value="lined"><span class="note-style-lined" title="云朵胶带叠贴"></span></label>
+            <label><input type="radio" name="noteStyle" value="torn"><span class="note-style-torn" title="叶片胶带拼贴"></span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>文字颜色</legend>
+          <div class="choice-row ink-color-choices">
+            <label><input type="radio" name="inkColor" value="#5b382d" checked><span style="--choice:#5b382d"></span></label>
+            <label><input type="radio" name="inkColor" value="#c45e70"><span style="--choice:#c45e70"></span></label>
+            <label><input type="radio" name="inkColor" value="#27727a"><span style="--choice:#27727a"></span></label>
+            <label><input type="radio" name="inkColor" value="#2e4d83"><span style="--choice:#2e4d83"></span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>贴纸</legend>
+          <div class="choice-row sticker-choices">
+            <label><input type="radio" name="sticker" value="♡" checked><span>♡</span></label>
+            <label><input type="radio" name="sticker" value="☆"><span>☆</span></label>
+            <label><input type="radio" name="sticker" value="✿"><span>✿</span></label>
+            <label><input type="radio" name="sticker" value="☀"><span>☀</span></label>
+          </div>
+        </fieldset>
+        <p id="wish-processing" class="wish-processing" role="status" hidden>正在把祝福画成稚拙手绘图案…</p>
+        <button class="publish-wish" type="submit">生成并发布祝福</button>
+      </form>
+    </dialog>
+    <dialog id="wish-viewer" class="wish-dialog wish-viewer">
+      <div class="dialog-heading">
+        <h2>祝福便签</h2>
+        <span id="viewer-status" class="viewer-status" aria-live="polite"></span>
+        <button class="dialog-close" type="button" data-close-dialog aria-label="关闭" title="关闭">×</button>
+      </div>
+      <div id="viewer-gallery" class="viewer-gallery" tabindex="0" aria-label="左右滑动查看其他祝福">
+        <div id="viewer-track" class="viewer-track"></div>
+      </div>
+      <div class="viewer-controls" aria-label="祝福便签翻页">
+        <button id="viewer-previous" type="button" aria-label="上一张祝福" title="上一张祝福">←</button>
+        <span>左右滑动查看</span>
+        <button id="viewer-next" type="button" aria-label="下一张祝福" title="下一张祝福">→</button>
+      </div>
+    </dialog>
+    <dialog id="share-preview" class="wish-dialog share-preview">
+      <div class="dialog-heading">
+        <h2>当前书页 · 分享预览</h2>
+        <button class="dialog-close" type="button" data-close-dialog aria-label="关闭" title="关闭">×</button>
+      </div>
+      <img id="share-image" alt="包含当前书页画面的纪念分享图">
+      <button id="native-share" class="download-share" type="button" hidden>分享给朋友</button>
+      <a id="download-share" class="download-share" download="噜噜晓-当前书页纪念图.png">下载当前书页</a>
+    </dialog>
+  </section>
+  <footer class="controls" aria-label="翻页控制">
+    <button id="previous" type="button" aria-label="上一页" title="上一页">←</button>
+    <div class="status" aria-live="polite"><span id="page-status">封面</span><small>拖动页面或使用方向键</small></div>
+    <button id="next" type="button" aria-label="下一页" title="下一页">→</button>
+  </footer>
+</main>
+<script src="../../js/vendor/page-flip.browser.js"></script>
+<script src="../../js/vendor/html2canvas.min.js"></script>
+<script src="../../js/memory/flipbook.js?v=fit44"></script>
+</body>
+</html>

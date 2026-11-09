@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9e6d7">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="噜噜晓的27年">
+  <link rel="manifest" href="manifest.webmanifest?v=fit34">
+  <link rel="apple-touch-icon" href="images/pets-birthday.png">
+  <link rel="icon" href="data:,">
+  <title>收集宝石交给噜噜晓 · 生日探险</title>
+  <link rel="preload" as="image" href="images/stage-start-27.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="images/opening-title-27.webp" type="image/webp">
+  <link rel="preload" as="image" href="images/dog-run-a-clean.png">
+  <link rel="preload" as="image" href="images/dog-run-b-clean.png">
+  <link rel="preload" as="image" href="images/archive/1.png">
+  <link rel="preload" as="image" href="images/archive/2.png">
+  <link rel="preload" as="image" href="images/archive/3.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Long+Cang&family=Ma+Shan+Zheng&family=Patrick+Hand&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/styles.css?v=fit9">
+  <link rel="stylesheet" href="css/adventure.css?v=fit9">
+  <link rel="stylesheet" href="css/paper-play.css?v=fit9">
+  <link rel="stylesheet" href="css/stage-ui.css?v=fit9">
+  <link rel="stylesheet" href="css/opening-depth.css?v=fit22">
+  <link rel="stylesheet" href="css/journey-refinements.css?v=fit38">
+  <link rel="stylesheet" href="css/mobile-fit.css?v=fit37">
+</head>
+<body>
+  <main class="game" id="game" aria-label="把一路的光带回家横向探险">
+    <div class="paper-grain" aria-hidden="true"></div>
+    <header class="hud">
+      <button class="title-mark" id="homeButton" type="button" aria-label="返回旅程起点">
+        <span>噜噜晓的27年</span><strong>打开地球online新副本</strong>
+      </button>
+      <div class="hud-actions">
+        <div class="gem-bag" aria-live="polite" aria-label="生日宝石收集进度">
+          <span class="gem-icon" aria-hidden="true"></span>
+          <strong id="gemCount">0</strong><span>/ 8</span>
+        </div>
+        <button class="round-button" id="soundButton" type="button" aria-label="开启声音" aria-pressed="false">
+          <span aria-hidden="true">♪</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="viewport" id="viewport" tabindex="0" aria-label="探险场景，可左右拖动或使用方向键">
+      <div class="world" id="world">
+        <div class="sky-layer" aria-hidden="true"></div>
+        <div class="distant-layer" id="distantLayer" aria-hidden="true"></div>
+        <div class="road" aria-hidden="true"><span></span></div>
+
+        <section class="zone zone-childhood" data-zone="童年" aria-label="小时候的千禧年石板小路">
+          <div class="place-title"><span>从这里出发</span><strong>小时候的石板路</strong></div>
+          <div class="paper-house childhood-house" role="button" tabindex="0" data-open="childhood" aria-label="进入童年小屋">
+            <div class="roof"></div><div class="window"><span></span></div><div class="door"></div>
+          </div>
+          <div class="shop"><div class="awning"></div><span>小卖部</span></div>
+          <div class="kiddie-ride" aria-hidden="true"><span></span></div>
+          <button class="gem gem-one" type="button" data-gem="album" aria-label="收集旧相册里的生日宝石"><span></span></button>
+          <p class="floating-quote quote-one">我想要的人生就是能有爱的，一切都在身边，始终不变的就是有冒险精神。</p>
+          <p class="floating-quote quote-two">愿每一个人都能活成自己想要的样子。</p>
+        </section>
+
+        <section class="zone zone-flight" data-zone="远行" aria-label="乘纸飞机飞越地球">
+          <div class="airport-sign">AIRPORT <span>→</span></div>
+          <div class="paper-globe" aria-hidden="true"><i></i><b></b></div>
+          <div class="paper-plane" aria-hidden="true"><span></span></div>
+          <button class="gem gem-three" type="button" data-gem="star" aria-label="收集云层中的生日宝石"><span></span></button>
+          <p class="floating-quote quote-flight-a">想探寻深渊，不可能永远停留在地面观望。</p>
+          <p class="floating-quote quote-flight-b">人生就像漫长的旅行，不管你经历怎样的风景，都要走出属于自己的步伐。</p>
+        </section>
+
+        <section class="zone zone-uk" data-zone="英国" aria-label="英国留学时期">
+          <div class="place-title"><span>雾蓝与砖红</span><strong>英国留学时期</strong></div>
+          <button class="phone-booth" type="button" data-open="photo" aria-label="打开英伦照相亭"><span>PHOTO</span></button>
+          <button class="library" type="button" data-open="library" aria-label="进入图书馆寻找宝石"><span>LIBRARY</span><i></i></button>
+          <div class="cafe"><span>CAFE</span></div>
+          <p class="floating-quote quote-uk-a">表演教会我克服恐惧，而生活教会我接纳自己。</p>
+          <p class="floating-quote quote-uk-b">谢谢你们曾努力地找到我，选择我。</p>
+        </section>
+
+        <section class="zone zone-voyage" data-zone="航海" aria-label="乘船驶向横店">
+          <div class="sea" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="paper-boat" aria-hidden="true"><i></i></div>
+          <button class="gem gem-six" type="button" data-gem="bottle" aria-label="收集漂流瓶里的生日宝石"><span></span></button>
+          <div class="sharp-quotes">
+            <p>瞄准，击中！</p><p>力量对外，也用后坐力对准自己。</p><p>撞碎山峦的寂静吧！！！</p>
+          </div>
+        </section>
+
+        <section class="zone zone-hengdian" data-zone="横店" aria-label="横店角色世界">
+          <div class="place-title"><span>故事开场</span><strong>角色世界</strong></div>
+          <div class="paifang" aria-hidden="true"><span></span></div>
+          <button class="director-chair" type="button" data-open="studio" aria-label="打开角色合照片场"><span>导演椅</span></button>
+          <button class="theater" type="button" data-open="cards" aria-label="打开角色剧场"><span>角色剧场</span></button>
+        </section>
+
+        <section class="zone zone-shanghai" data-zone="家" aria-label="回到家">
+          <div class="night-river" aria-hidden="true"></div>
+          <div class="pearl-tower" aria-hidden="true"><i></i><b></b></div>
+          <div class="home-window" data-open="finale" role="button" tabindex="0" aria-label="回到家"><span></span></div>
+          <p class="floating-quote quote-home">从很远的地方出发，再回到最熟悉的地方</p>
+        </section>
+
+        <div class="stickers" id="stickers" aria-label="人生档案插图"></div>
+        <div class="runner" id="runner" aria-hidden="true">
+          <img alt="">
+          <span class="scarf"></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="travel-controls" aria-label="移动控制">
+      <button id="backButton" type="button" aria-label="向左移动">←</button>
+      <div class="journey-track" aria-hidden="true"><span id="progressFill"></span><i id="progressDog"></i></div>
+      <button id="forwardButton" type="button" aria-label="向右移动">→</button>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <aside class="landscape-required" role="status" aria-label="请旋转手机横屏游玩">
+    <span class="rotate-phone" aria-hidden="true"></span>
+    <strong>请横屏游玩</strong>
+    <small>旋转手机后会自动进入探险</small>
+  </aside>
+
+  <dialog class="paper-dialog" id="gameDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="关闭">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <template id="childhoodTemplate">
+    <article class="dialog-scene childhood-room">
+      <h2 id="dialogTitle">童年小屋</h2><p>旧相机里还藏着一小束光。</p>
+      <button class="old-camera" type="button" data-dialog-gem="camera"><span></span><b></b></button>
+    </article>
+  </template>
+  <template id="photoTemplate">
+    <article class="dialog-scene photo-studio">
+      <h2 id="dialogTitle">英伦照相亭</h2><p>选一张照片，和旅程中的角色留下拍立得。</p>
+      <label class="upload-label">选择照片<input id="photoUpload" type="file" accept="image/*"></label>
+      <div class="polaroid"><div id="photoPreview">你的照片</div><img src="images/archive/17.png" alt="卡通角色"></div>
+      <button class="action-button" type="button" data-dialog-gem="photo">拍下这一刻</button>
+    </article>
+  </template>
+  <template id="libraryTemplate">
+    <article class="dialog-scene library-game">
+      <h2 id="dialogTitle">贴画碰个面</h2><p>翻开散落的手帐贴画，把三组同款连起来。</p>
+      <div class="book-grid" id="bookGrid"></div>
+    </article>
+  </template>
+  <template id="studioTemplate">
+    <article class="dialog-scene studio-game">
+      <h2 id="dialogTitle">角色合照片场</h2><p>选择角色背景，完成一张片场纪念照。</p>
+      <div class="role-options"><button data-role="26"><img src="images/archive/26.png" alt="角色一"></button><button data-role="27"><img src="images/archive/27.png" alt="角色二"></button><button data-role="28"><img src="images/archive/28.png" alt="角色三"></button></div>
+      <button class="action-button" type="button" data-dialog-gem="role">完成合照</button>
+    </article>
+  </template>
+  <template id="cardsTemplate">
+    <article class="dialog-scene cards-game">
+      <h2 id="dialogTitle">角色剧场</h2><p>翻开三张角色卡，隐藏宝石就会出现。</p>
+      <div class="flip-cards"><button class="flip-card"><span>?</span><img src="images/archive/26.png" alt="角色卡一"></button><button class="flip-card"><span>?</span><img src="images/archive/27.png" alt="角色卡二"></button><button class="flip-card"><span>?</span><img src="images/archive/28.png" alt="角色卡三"></button></div>
+    </article>
+  </template>
+  <template id="finaleTemplate">
+    <article class="dialog-scene finale-game">
+      <h2 id="dialogTitle">把一路的光，带回家</h2>
+      <div class="gem-jar" id="gemJar"></div>
+      <div class="cake"><span class="candle"></span><strong>噜噜晓27岁快乐</strong></div>
+      <div class="match-area"><button class="match" id="match" type="button" aria-label="拖动火柴点燃蜡烛"><span></span></button><div class="matchbox">沿这里划动</div></div>
+      <section class="notes-wall" id="notesWall" hidden>
+        <h3>谢谢你曾努力地找到我们，选择我们。<br>这一次，换我们沿着你的路，走来见你。</h3>
+        <form id="noteForm"><label>昵称<input name="name" required maxlength="12"></label><label>祝福语<textarea name="message" required maxlength="120"></textarea></label><fieldset><legend>便签颜色</legend><label><input type="radio" name="color" value="kraft" checked>牛皮纸</label><label><input type="radio" name="color" value="pink">淡粉</label><label><input type="radio" name="color" value="blue">浅蓝</label><label><input type="radio" name="color" value="ivory">米白</label></fieldset><button class="action-button" type="submit">贴在墙上</button></form>
+        <div class="posted-notes" id="postedNotes"></div>
+      </section>
+    </article>
+  </template>
+  <script src="js/app.js?v=fit18"></script>
+  <script src="js/adventure.js?v=fit14"></script>
+  <script src="js/paper-play.js?v=fit13"></script>
+  <script src="js/stage-ui.js?v=fit30"></script>
+  <script src="js/journey-refinements.js?v=fit31"></script>
+  <script src="js/illustrated-games.js?v=fit9"></script>
+</body>
+</html>
